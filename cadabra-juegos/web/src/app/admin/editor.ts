@@ -74,6 +74,7 @@ export class Editor {
       url_tienda: '',
       revisar: false,
       en_local: false,
+      para_llevar: false,
       visible: false,
     },
     { validators: rangos },

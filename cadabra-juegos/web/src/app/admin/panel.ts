@@ -63,6 +63,7 @@ export class Panel {
       ocultos: js.length - visibles,
       incompletos: js.filter((j) => j._faltan.length).length,
       enLocal: js.filter((j) => j.en_local).length,
+      paraLlevar: js.filter((j) => j.para_llevar).length,
       sinPortada: js.filter((j) => !j.portada).length,
       porDecidir: js.filter((j) => j.bgg_estado === 'dudoso').length,
     };
@@ -79,7 +80,7 @@ export class Panel {
         (!o || j.origen === o) &&
         (!inc || j._faltan.length > 0) &&
         (!rev || j.revisar) &&
-        (!loc || j.en_local === (loc === 'si')) &&
+        (!loc || (loc === 'llevar' ? j.para_llevar : j.en_local === (loc === 'si'))) &&
         (!por || !j.portada === (por === 'sin')) &&
         (!bgg || j.bgg_estado === bgg),
     );

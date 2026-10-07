@@ -17,6 +17,9 @@
     <button type="button" [class.activa]="local() === 'si'" (click)="filtrar(local, local() === 'si' ? '' : 'si')">
       <b>{{ cuentas().enLocal }}</b> en el local
     </button>
+    <button type="button" [class.activa]="local() === 'llevar'" (click)="filtrar(local, local() === 'llevar' ? '' : 'llevar')">
+      <b>{{ cuentas().paraLlevar }}</b> para llevar
+    </button>
     <button type="button" [class.activa]="portadaFiltro() === 'sin'" (click)="filtrar(portadaFiltro, portadaFiltro() === 'sin' ? '' : 'sin')">
       <b>{{ cuentas().sinPortada }}</b> sin portada
     </button>
@@ -66,6 +69,7 @@
         <option value="">Todos</option>
         <option value="si">Sí</option>
         <option value="no">No</option>
+        <option value="llevar">Para llevar</option>
       </select>
     </label>
     <label class="check">
@@ -139,6 +143,9 @@
               {{ j.slug }}
               @if (j.origen === 'tienda') {
                 <span class="etiqueta">tienda</span>
+              }
+              @if (j.para_llevar) {
+                <span class="etiqueta">para llevar</span>
               }
               @if (j.revisar) {
                 <span class="etiqueta aviso">revisar</span>

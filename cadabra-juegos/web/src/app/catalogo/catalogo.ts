@@ -44,7 +44,7 @@ export class Catalogo {
   protected readonly q = signal('');
   protected readonly cat = signal('');
   protected readonly dur = signal(0);
-  protected readonly soloLocal = signal(false);
+  protected readonly disp = signal<'' | 'local' | 'llevar'>('');
   protected readonly orden = signal<Orden>('nombre');
 
   protected readonly categorias = computed(() =>
@@ -53,14 +53,14 @@ export class Catalogo {
 
   /** Todos los filtros menos la dificultad: sirve para contar cuántos hay de cada nivel. */
   private readonly base = computed(() => {
-    const jug = this.jug(), q = normalizar(this.q().trim()), cat = this.cat(), dur = this.dur(), local = this.soloLocal();
+    const jug = this.jug(), q = normalizar(this.q().trim()), cat = this.cat(), dur = this.dur(), disp = this.disp();
     return this.juegos().filter(
       (j) =>
         (!jug || (jug === 8 ? j.jugadores_max >= 8 : jug >= j.jugadores_min && jug <= j.jugadores_max)) &&
         (!q || j._n.includes(q)) &&
         (!cat || j.categoria === cat) &&
         (!dur || j.duracion_min <= dur) &&
-        (!local || j.en_local),
+        (!disp || (disp === 'local' ? j.en_local : j.para_llevar)),
     );
   });
   protected readonly porNivel = computed(() => {
@@ -128,7 +128,7 @@ export class Catalogo {
     this.q.set('');
     this.cat.set('');
     this.dur.set(0);
-    this.soloLocal.set(false);
+    this.disp.set('');
   }
 
   protected jugadores(j: JuegoPublico) {

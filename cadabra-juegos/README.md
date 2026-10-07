@@ -196,3 +196,13 @@ Cualquiera puede enviar una solicitud, pero **solo los admins pueden leerlas** (
   nombre guardado ("juego eliminado").
 - `solicitudes.prefijo` en `web/src/environments/*.ts` (ej. `'+58'`) permite que el visitante escriba el número sin código de país;
   `solicitudes.privacidadUrl` agrega un enlace a tu política de privacidad junto al consentimiento.
+
+## Para llevar
+
+Un juego puede estar **en el local** (ya está ahí) o **para llevar** (no está, pero se puede llevar si alguien lo pide). Son excluyentes
+(la base lo impide). En el panel se marca desde el editor ("Para llevar"), se filtra en "En el local → Para llevar" y tiene su contador;
+en el catálogo sale como etiqueta y en el filtro "Mostrar → Para llevar". Los juegos para llevar también se pueden solicitar.
+
+`scripts/para-llevar-nube.sh` aplica de una vez la lista de Cadabra (nombres en `scripts/para-llevar.mjs`): marca esos juegos como
+para llevar y visibles, y oculta los demás visibles que no están en el local. Sin `--aplicar` solo muestra el plan; `--revertir
+--aplicar` lo deshace (usa `scripts/para-llevar-respaldo.json`). Los juegos incompletos no se pueden hacer visibles hasta completarlos.

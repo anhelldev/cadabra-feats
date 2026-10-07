@@ -68,7 +68,13 @@ import { Dado } from '../shared/dado';
             }
           </div>
           @if (!juego().en_local) {
-            <p class="nolocal">Este juego todavía no está en el local. Puedes pedirlo y te avisamos cuando esté disponible.</p>
+            <p class="nolocal">
+              @if (juego().para_llevar) {
+                Este juego no está en el local, pero podemos llevarlo. Pídelo y te avisamos para coordinar el día.
+              } @else {
+                Este juego todavía no está en el local. Puedes pedirlo y te avisamos cuando esté disponible.
+              }
+            </p>
           }
         </div>
       </div>
@@ -129,7 +135,7 @@ export class Ficha {
       `Dificultad: ${NIVELES[j.dificultad].toLowerCase()}`,
       `Desde ${j.edad_min} años`,
       j.categoria,
-      ...(j.en_local ? ['En el local'] : []),
+      ...(j.en_local ? ['En el local'] : j.para_llevar ? ['Para llevar'] : []),
     ];
   });
 

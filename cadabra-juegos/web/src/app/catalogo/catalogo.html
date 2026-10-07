@@ -101,8 +101,12 @@
       </p>
       <div class="barra-acciones">
         <label class="check">
-          <input type="checkbox" [checked]="soloLocal()" (change)="soloLocal.set($any($event.target).checked)" />
-          Solo los que hay en el local
+          Mostrar
+          <select [value]="disp()" (change)="disp.set($any($event.target).value)">
+            <option value="">Todos</option>
+            <option value="local">Los que hay en el local</option>
+            <option value="llevar">Para llevar</option>
+          </select>
         </label>
         <button class="enlace" type="button" (click)="limpiar()">Quitar filtros</button>
         <button class="boton girar" type="button" [disabled]="!resultados().length" (click)="ruleta.set(true)">
@@ -132,6 +136,8 @@
                 {{ j.categoria }}
                 @if (j.en_local) {
                   <span class="local">En el local</span>
+                } @else if (j.para_llevar) {
+                  <span class="local llevar">Para llevar</span>
                 }
               </span>
             </span>

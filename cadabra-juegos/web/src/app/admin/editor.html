@@ -103,6 +103,10 @@
           <input type="checkbox" formControlName="en_local" />
           Está en el local
         </label>
+        <label class="check ancho2">
+          <input type="checkbox" formControlName="para_llevar" />
+          Para llevar (no está en el local, pero se puede llevar si lo piden)
+        </label>
         <label class="check ancho2 destacado">
           <input type="checkbox" formControlName="visible" [attr.aria-describedby]="faltan().length ? 'e-faltan' : null" />
           Visible en la lista de juegos para jugar

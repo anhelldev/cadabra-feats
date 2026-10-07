@@ -4,3 +4,6 @@ node_modules/
 dist/
 .angular/
 scripts/portadas-respaldo.jsonl
+scripts/para-llevar-respaldo.json
+scripts/agregar-candidatos.json
+scripts/agregar-ids.json

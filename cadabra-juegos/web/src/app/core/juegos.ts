@@ -57,6 +57,7 @@ export interface Juego {
   revisar: boolean;
   visible: boolean;
   en_local: boolean;
+  para_llevar: boolean;
   bgg_id: number | null;
   bgg_tipo: string | null;
   bgg_estado: EstadoBgg;
