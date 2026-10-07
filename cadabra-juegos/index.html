@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Juegos de Cadabra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mesa:#FAF0E1; --carta:#FFFFFF; --tinta:#24272A; --tenue:#6E5F78; --linea:#E3D3E6;
+  --tapete:#715091; --tapete-tinta:#FAF0E1; --tapete-tenue:#C19ADE; --tapete-linea:#8E6FAE;
+  --ficha:#FF8300; --ficha-tinta:#24272A; --aviso:#C2410C; --dado:#FFFFFF; --pip:#24272A;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --texto:"General Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --mesa:#1A1520; --carta:#251E2D; --tinta:#F3EAF7; --tenue:#B8A8C4; --linea:#3B3046;
+    --tapete:#3E2A52; --tapete-linea:#5E4479; --aviso:#FDBA74; --dado:#F3EAF7; --pip:#1A1520;
+  }
+}
+:root[data-theme="dark"]{
+  --mesa:#1A1520; --carta:#251E2D; --tinta:#F3EAF7; --tenue:#B8A8C4; --linea:#3B3046;
+  --tapete:#3E2A52; --tapete-linea:#5E4479; --aviso:#FDBA74; --dado:#F3EAF7; --pip:#1A1520;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--mesa);color:var(--tinta);font-family:var(--texto);font-size:16px;line-height:1.45}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--ficha);outline-offset:2px}
+.ancho{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* Tapete: la pregunta de la mesa */
+.tapete{background:var(--tapete);color:var(--tapete-tinta);padding:28px 0 32px}
+.marca{font-family:var(--display);font-weight:700;font-size:1rem;color:var(--tapete-tenue);margin:0 0 18px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,7vw,3.6rem);line-height:1;letter-spacing:-.02em;margin:0 0 20px}
+.sillas{display:flex;flex-wrap:wrap;gap:8px}
+.silla{min-width:52px;height:52px;padding:0 14px;border-radius:14px;border:2px solid var(--tapete-linea);background:transparent;
+  color:var(--tapete-tinta);font-family:var(--display);font-weight:700;font-size:1.35rem;cursor:pointer}
+.silla:hover{border-color:var(--tapete-tenue)}
+.silla[aria-pressed="true"]{background:var(--ficha);border-color:var(--ficha);color:var(--ficha-tinta)}
+.silla.todos{font-size:1rem}
+
+/* Filtros */
+.filtros{padding:20px 0 8px;display:grid;gap:14px}
+.fila{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.campo{display:grid;gap:4px;font-size:.85rem;color:var(--tenue)}
+.campo.crece{flex:1 1 220px}
+.campo input,.campo select{height:42px;padding:0 12px;border:1px solid var(--linea);border-radius:10px;background:var(--carta);color:var(--tinta);min-width:0;width:100%}
+.dados{display:flex;flex-wrap:wrap;gap:8px}
+.dado-btn{display:flex;align-items:center;gap:8px;padding:6px 12px 6px 6px;border:1px solid var(--linea);border-radius:12px;background:var(--carta);cursor:pointer;text-align:left}
+.dado-btn small{display:block;color:var(--tenue);font-size:.75rem;line-height:1.1}
+.dado-btn b{font-weight:600;font-size:.9rem;line-height:1.1}
+.dado-btn[aria-pressed="true"]{border-color:var(--tapete);box-shadow:inset 0 0 0 2px var(--tapete)}
+.dado-btn[disabled]{opacity:.45;cursor:default}
+svg.dado{flex:none;display:block}
+svg.dado rect{fill:var(--dado);stroke:var(--tinta);stroke-width:1.5}
+svg.dado circle{fill:var(--pip)}
+.titulo-grupo{font-size:.85rem;color:var(--tenue);margin:0 0 6px}
+
+/* Resultados */
+.barra{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;padding:14px 0 10px;border-bottom:2px solid var(--tinta)}
+.cuenta{font-family:var(--display);font-weight:700;font-size:1.25rem;margin:0}
+.barra label{font-size:.9rem;color:var(--tenue);display:flex;gap:6px;align-items:center}
+.enlace{background:none;border:0;padding:0;color:var(--tinta);text-decoration:underline;cursor:pointer;font-size:.9rem}
+.lista{list-style:none;margin:0;padding:0 0 48px}
+.cab,.juego{display:grid;grid-template-columns:minmax(0,1fr) 92px 84px 132px 56px;gap:12px;align-items:center}
+.cab{font-size:.8rem;color:var(--tenue);padding:10px 0 6px}
+.juego{padding:11px 0;border-bottom:1px solid var(--linea)}
+.nombre{font-weight:600;overflow-wrap:anywhere}
+.cat{display:block;font-weight:400;font-size:.82rem;color:var(--tenue)}
+.estimado{color:var(--aviso);font-weight:500}
+.dif{display:flex;align-items:center;gap:8px;font-size:.9rem}
+.dato{font-variant-numeric:tabular-nums;font-size:.95rem}
+.vacio{padding:40px 0;color:var(--tenue)}
+.vacio b{display:block;color:var(--tinta);font-family:var(--display);font-size:1.3rem;margin-bottom:6px}
+.nota{font-size:.85rem;color:var(--tenue);padding:0 0 40px;max-width:70ch}
+@media (max-width:640px){
+  .cab{display:none}
+  .juego{grid-template-columns:auto auto auto auto 1fr;gap:4px 14px}
+  .nombre{grid-column:1/-1}
+  .dato,.dif{font-size:.85rem;color:var(--tenue)}
+}
+
+.juego{cursor:pointer}
+.juego:hover .abrir{text-decoration:underline}
+.abrir{background:none;border:0;padding:0;font:inherit;font-weight:600;color:inherit;text-align:left;cursor:pointer}
+dialog{border:0;padding:0;border-radius:18px;background:var(--carta);color:var(--tinta);width:min(720px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto}
+dialog::backdrop{background:rgba(36,20,48,.6)}
+.ficha{display:grid;grid-template-columns:240px minmax(0,1fr)}
+.f-caja{position:relative;min-height:300px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:var(--c,#715091);overflow:hidden}
+.f-caja img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.f-caja .tipo{font-size:.85rem;opacity:.85}
+.f-caja .titulo{font-family:var(--display);font-weight:800;font-size:1.9rem;line-height:1;letter-spacing:-.01em;overflow-wrap:anywhere}
+.f-caja svg.dado{align-self:flex-end}
+.f-caja svg.dado rect{fill:#fff;stroke:none}
+.f-caja svg.dado circle{fill:var(--c,#715091)}
+.f-cuerpo{padding:22px 22px 20px;display:grid;gap:14px;align-content:start}
+.f-cuerpo h2{font-family:var(--display);font-weight:800;font-size:1.6rem;line-height:1.1;margin:0}
+.f-meta{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.f-meta li{border:1px solid var(--linea);border-radius:999px;padding:3px 10px;font-size:.85rem}
+.f-cuerpo p{margin:0;max-width:60ch}
+.f-cuerpo h3{font-family:var(--display);font-size:1.05rem;margin:0 0 6px}
+.f-cuerpo ul.tips{margin:0;padding-left:1.1em;display:grid;gap:4px}
+.f-vacio{color:var(--tenue)}
+.f-cerrar{justify-self:start;height:42px;padding:0 18px;border-radius:10px;border:0;background:var(--tapete);color:var(--tapete-tinta);font-weight:600;cursor:pointer}
+@media (max-width:640px){.ficha{grid-template-columns:1fr}.f-caja{min-height:190px}}
+</style>
+</head>
+<body>
+<header class="tapete">
+  <div class="ancho">
+    <p class="marca">Juegos de Cadabra</p>
+    <h1 id="pregunta">¿Cuántos van a jugar?</h1>
+    <div class="sillas" id="sillas" role="group" aria-labelledby="pregunta"></div>
+  </div>
+</header>
+
+<main class="ancho">
+  <section class="filtros" aria-label="Filtros">
+    <div>
+      <p class="titulo-grupo" id="t-dif">Dificultad</p>
+      <div class="dados" id="dados" role="group" aria-labelledby="t-dif"></div>
+    </div>
+    <div class="fila">
+      <label class="campo crece">Buscar por nombre
+        <input type="search" id="q" placeholder="Catan, Dixit, Virus…" autocomplete="off">
+      </label>
+      <label class="campo">Categoría
+        <select id="cat"></select>
+      </label>
+      <label class="campo">Duración
+        <select id="dur">
+          <option value="0">Cualquiera</option>
+          <option value="15">Hasta 15 min</option>
+          <option value="30">Hasta 30 min</option>
+          <option value="60">Hasta 1 hora</option>
+          <option value="120">Hasta 2 horas</option>
+        </select>
+      </label>
+      <label class="campo">Ordenar por
+        <select id="orden">
+          <option value="nombre">Nombre</option>
+          <option value="facil">Más fáciles primero</option>
+          <option value="dificil">Más difíciles primero</option>
+          <option value="corto">Más cortos primero</option>
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <div class="barra">
+    <p class="cuenta" id="cuenta" aria-live="polite"></p>
+    <label><input type="checkbox" id="rev"> Solo datos estimados (<span id="nrev"></span>)</label>
+    <button class="enlace" id="limpiar" type="button">Quitar filtros</button>
+  </div>
+  <div class="cab" aria-hidden="true"><span>Juego</span><span>Jugadores</span><span>Duración</span><span>Dificultad</span><span>Edad</span></div>
+  <ul class="lista" id="lista"></ul>
+  <p class="nota">Los juegos marcados como “dato estimado” no se pudieron identificar con seguridad por el nombre: sus valores son una aproximación y conviene revisarlos con la caja en la mano.</p>
+</main>
+
+<dialog id="ficha" aria-labelledby="f-nombre"><div class="ficha">
+  <div class="f-caja" id="f-caja"></div>
+  <div class="f-cuerpo">
+    <h2 id="f-nombre"></h2>
+    <ul class="f-meta" id="f-meta"></ul>
+    <p id="f-desc"></p>
+    <div id="f-tips"></div>
+    <button class="f-cerrar" id="f-cerrar" type="button">Cerrar</button>
+  </div>
+</div></dialog>
+
+<script type="module">
+let JUEGOS;
+try { const r = await fetch("juegos.json"); if (!r.ok) throw new Error(r.status); JUEGOS = await r.json(); }
+catch (e) { document.getElementById("cuenta").textContent = "No se pudo cargar juegos.json"; throw e; }
+const NIVEL = ["", "Muy fácil", "Fácil", "Media", "Difícil", "Experto"];
+const PIPS = {1:[[12,12]],2:[[7,7],[17,17]],3:[[7,7],[12,12],[17,17]],4:[[7,7],[17,7],[7,17],[17,17]],5:[[7,7],[17,7],[12,12],[7,17],[17,17]]};
+const f = {jug:0, dif:0, q:"", cat:"", dur:0, orden:"nombre", rev:false};
+const $ = id => document.getElementById(id);
+const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const dado = (n, t=24) => `<svg class="dado" width="${t}" height="${t}" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="5"/>${PIPS[n].map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="2.1"/>`).join("")}</svg>`;
+
+JUEGOS.forEach(j => j._n = norm(j.nombre));
+
+function pasa(j, sinDif){
+  if (f.jug && (f.jug === 8 ? j.jugadoresMax < 8 : (f.jug < j.jugadoresMin || f.jug > j.jugadoresMax))) return false;
+  if (!sinDif && f.dif && j.dificultad !== f.dif) return false;
+  if (f.q && !j._n.includes(f.q)) return false;
+  if (f.cat && j.categoria !== f.cat) return false;
+  if (f.dur && j.duracionMin > f.dur) return false;
+  if (f.rev && !j.revisar) return false;
+  return true;
+}
+const ORDEN = {
+  nombre:(a,b)=>a.nombre.localeCompare(b.nombre,"es",{numeric:true}),
+  facil:(a,b)=>a.dificultad-b.dificultad||a.duracionMin-b.duracionMin,
+  dificil:(a,b)=>b.dificultad-a.dificultad||b.duracionMin-a.duracionMin,
+  corto:(a,b)=>a.duracionMin-b.duracionMin||a.dificultad-b.dificultad
+};
+
+function pintar(){
+  // sillas
+  [...$("sillas").children].forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.n === f.jug)));
+  // dados con conteo según el resto de filtros
+  const base = JUEGOS.filter(j => pasa(j, true));
+  [...$("dados").children].forEach(b => {
+    const n = +b.dataset.n, c = base.filter(j => j.dificultad === n).length;
+    b.querySelector("small").textContent = c + (c === 1 ? " juego" : " juegos");
+    b.setAttribute("aria-pressed", String(f.dif === n));
+    b.disabled = c === 0 && f.dif !== n;
+  });
+  const res = base.filter(j => !f.dif || j.dificultad === f.dif).sort(ORDEN[f.orden]);
+  $("cuenta").textContent = res.length === JUEGOS.length ? `${res.length} juegos en el catálogo`
+    : `${res.length} de ${JUEGOS.length} juegos`;
+  $("lista").innerHTML = res.length ? res.map(j => `
+    <li class="juego" data-id="${j.id}">
+      <span class="nombre"><button class="abrir" type="button">${esc(j.nombre)}</button><span class="cat">${esc(j.categoria)}${j.revisar ? ' <span class="estimado">(dato estimado)</span>' : ""}</span></span>
+      <span class="dato">${j.jugadoresMin === j.jugadoresMax ? j.jugadoresMin : j.jugadoresMin + "–" + j.jugadoresMax} jug.</span>
+      <span class="dato">${j.duracionMin} min</span>
+      <span class="dif">${dado(j.dificultad, 20)}${NIVEL[j.dificultad]}</span>
+      <span class="dato">${j.edadMin}+</span>
+    </li>`).join("")
+    : `<li class="vacio"><b>Ningún juego coincide con estos filtros</b>Prueba con otro número de jugadores o quita la dificultad.</li>`;
+}
+
+// construir controles
+$("sillas").innerHTML = `<button class="silla todos" data-n="0" type="button">Da igual</button>` +
+  [1,2,3,4,5,6,7,8].map(n => `<button class="silla" data-n="${n}" type="button" aria-label="${n === 8 ? "8 o más jugadores" : n + (n === 1 ? " jugador" : " jugadores")}">${n === 8 ? "8+" : n}</button>`).join("");
+$("dados").innerHTML = [1,2,3,4,5].map(n => `<button class="dado-btn" data-n="${n}" type="button">${dado(n, 30)}<span><b>${NIVEL[n]}</b><small></small></span></button>`).join("");
+$("cat").innerHTML = `<option value="">Todas</option>` + [...new Set(JUEGOS.map(j => j.categoria))].sort((a,b)=>a.localeCompare(b,"es")).map(c => `<option>${esc(c)}</option>`).join("");
+$("nrev").textContent = JUEGOS.filter(j => j.revisar).length;
+
+$("sillas").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; f.jug = +b.dataset.n; pintar(); });
+$("dados").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; const n = +b.dataset.n; f.dif = f.dif === n ? 0 : n; pintar(); });
+$("q").addEventListener("input", e => { f.q = norm(e.target.value.trim()); pintar(); });
+$("cat").addEventListener("change", e => { f.cat = e.target.value; pintar(); });
+$("dur").addEventListener("change", e => { f.dur = +e.target.value; pintar(); });
+$("orden").addEventListener("change", e => { f.orden = e.target.value; pintar(); });
+$("rev").addEventListener("change", e => { f.rev = e.target.checked; pintar(); });
+$("limpiar").addEventListener("click", () => {
+  Object.assign(f, {jug:0, dif:0, q:"", cat:"", dur:0, rev:false});
+  $("q").value = ""; $("cat").value = ""; $("dur").value = "0"; $("rev").checked = false; pintar();
+});
+
+// Ficha del juego
+const COLOR = {"Estrategia":"#1F4E79","Familiar":"#2E7D5B","Party":"#B83280","Cartas":"#6B46C1","Cooperativo":"#0E7490","Deducción":"#374151","Adultos":"#9B2C2C","Infantil":"#B7791F","Abstracto":"#4A5568","Habilidad":"#C05621","Clásico":"#5A4632","Palabras y trivia":"#2B6CB0","Aventura":"#276749","Expansión":"#64748B"};
+let abierto = 0;
+const PORTADAS = "portadas/";
+const PORID = new Map(JUEGOS.map(j => [j.id, j]));
+function abrir(j){
+  const caja = $("f-caja");
+  caja.style.setProperty("--c", COLOR[j.categoria] || "#715091");
+  // Portada: si el juego trae "portada" (URL o data URI) se muestra; si no, una caja genérica.
+  caja.innerHTML = `<span class="tipo">${esc(j.categoria)}</span><span class="titulo">${esc(j.nombre)}</span>${dado(j.dificultad, 40)}`;
+  // Orden de búsqueda: campo "portada" del JSON, luego portadas/<slug>.webp, .jpg, .png. Si ninguna carga, queda la caja genérica.
+  const rutas = j.portada ? [j.portada] : PORTADAS ? ["webp","jpg","png"].map(x => PORTADAS + j.slug + "." + x) : [];
+  abierto = j.id;
+  (function probar(i){
+    if (i >= rutas.length) return;
+    const img = new Image();
+    img.alt = "Portada de " + j.nombre;
+    img.onload = () => { if (abierto === j.id) caja.replaceChildren(img); };
+    img.onerror = () => probar(i + 1);
+    img.src = rutas[i];
+  })(0);
+  $("f-nombre").textContent = j.nombre;
+  $("f-meta").innerHTML = [
+    (j.jugadoresMin === j.jugadoresMax ? j.jugadoresMin : j.jugadoresMin + " a " + j.jugadoresMax) + (j.jugadoresMax === 1 ? " jugador" : " jugadores"),
+    j.duracionMin + " min", "Dificultad: " + NIVEL[j.dificultad].toLowerCase(), "Desde " + j.edadMin + " años", j.categoria
+  ].map(x => `<li>${esc(x)}</li>`).join("");
+  const d = $("f-desc");
+  d.className = j.descripcion ? "" : "f-vacio";
+  d.textContent = j.descripcion || (j.revisar
+    ? "Este juego no se pudo identificar con seguridad por el nombre, así que todavía no tiene descripción y sus datos son estimados."
+    : "Este juego todavía no tiene descripción.");
+  $("f-tips").innerHTML = j.tips.length ? `<h3>Para empezar rápido</h3><ul class="tips">${j.tips.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+  $("ficha").showModal();
+}
+$("lista").addEventListener("click", e => { const li = e.target.closest(".juego"); if (li) abrir(PORID.get(+li.dataset.id)); });
+$("f-cerrar").addEventListener("click", () => $("ficha").close());
+$("ficha").addEventListener("click", e => { if (e.target === $("ficha")) $("ficha").close(); });
+pintar();
+</script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+Nombre de archivo para la portada de cada juego (extensión .webp, .jpg o .png)
+
+5-minute-mystery.jpg    5 Minute Mystery
+7-wonders.jpg    7 Wonders
+7-wonders-duel.jpg    7 Wonders Duel
+13-ghosts.jpg    13 Ghosts
+25-outlaws.jpg    25 Outlaws
+25-outlets.jpg    25 Outlets
+adivina-en-10.jpg    Adivina En 10
+adivina-quien.jpg    Adivina Quién?
+adult-drinking-games.jpg    Adult Drinking Games
+aire-tierra-y-mar.jpg    Aire, Tierra y Mar
+akropolis.jpg    Akropolis
+alianza-epica.jpg    Alianza Épica
+alquimistas.jpg    Alquimistas
+alma-mater.jpg    Alma Mater
+amigos-de-mierda.jpg    Amigos de Mierda
+among-cultists.jpg    Among Cultists
+anarchy-pancakes.jpg    Anarchy Pancakes
+anno-1800.jpg    Anno 1800
+aqua.jpg    Aqua
+around-the-world.jpg    Around the World
+arkham-horror-the-card-game.jpg    Arkham Horror: The Card Game
+auzou-ouga-bouga.jpg    Auzou / Ouga Bouga
+avalon.jpg    Avalon
+alzad-vuestras-copas.jpg    Alzad Vuestras Copas
+bahamas.jpg    Bahamas
+baraja-para-citar.jpg    Baraja para Citar
+barking-kittens.jpg    Barking Kittens
+basta.jpg    Basta
+basta-20.jpg    Basta 20
+bears-vs-babies.jpg    Bears vs Babies
+beat-stitch.jpg    Beat Stitch
+bedroom-battle.jpg    Bedroom Battle
+betrayal-at-house-on-the-hill.jpg    Betrayal at House on the Hill
+bienvenido-a-la-mazmorra.jpg    Bienvenido a la Mazmorra
+big-boss-bohnanza.jpg    Big Boss / Bohnanza
+bitcoin.jpg    Bitcoin
+bitoku.jpg    Bitoku
+black-mirror.jpg    Black Mirror
+black-stories.jpg    Black Stories
+black-stories-3.jpg    Black Stories 3
+black-stories-crimenes-verdaderos.jpg    Black Stories: Crímenes Verdaderos
+black-stories-muerte-en-hollywood.jpg    Black Stories: Muerte en Hollywood
+black-stories-school-stories.jpg    Black Stories: School Stories
+black-stories-superheroes.jpg    Black Stories: Superhéroes
+blind-business.jpg    Blind Business
+bloom-town.jpg    Bloom Town
+boogeyman.jpg    Boogeyman
+brain-chess.jpg    Brain Chess
+bucket-of-doom.jpg    Bucket of Doom
+cabrito.jpg    Cabrito
+caida-libre.jpg    Caída Libre
+calico.jpg    Calico
+camel-up.jpg    Camel Up
+campy-creatures.jpg    Campy Creatures
+candy-humanity-family.jpg    Candy Humanity: Family
+candy-vs-gravity.jpg    Candy vs Gravity
+carcassonne.jpg    Carcassonne
+carpe-diem.jpg    Carpe Diem
+carrera-de-pinguinos.jpg    Carrera de Pingüinos
+catan.jpg    Catan
+catan-ampliacion-5-a-6.jpg    Catan Ampliación 5 a 6
+catan-el-duelo.jpg    Catan El Duelo
+catan-el-despertar-de-la-humanidad.jpg    Catan El Despertar de la Humanidad
+catan-el-juego.jpg    Catan El Juego
+catan-energias.jpg    Catan Energías
+catan-extension-5-a-6.jpg    Catan Extensión 5 a 6
+catan-game-of-thrones.jpg    Catan Game of Thrones
+catan-juego-de-cartas.jpg    Catan Juego de Cartas
+catan-junior.jpg    Catan Junior
+catan-piratas-y-exploradores.jpg    Catan Piratas y Exploradores
+catan-viajeros-de-las-estrellas-el-duelo.jpg    Catan Viajeros de las Estrellas: El Duelo
+cazabombas.jpg    Cazabombas
+cerveza-y-pan.jpg    Cerveza y Pan
+chao-pescao.jpg    Chao Pescao!
+chupate-esa.jpg    Chúpate Esa
+citadels.jpg    Citadels
+cities.jpg    Cities
+clank-catacumbas.jpg    Clank! Catacumbas
+clank-in-space.jpg    Clank! In! Space!
+clue-cluedo.jpg    Clue / Cluedo
+cluedo-suspect.jpg    Cluedo Suspect
+cocos-locos.jpg    Cocos Locos
+codenames-pictures.jpg    Codenames Pictures
+coffee-rush.jpg    Coffee Rush
+color-brain.jpg    Color Brain
+colt-express.jpg    Colt Express
+con-eso-no-se-jode.jpg    Con Eso No Se Jode
+concept.jpg    Concept
+coop-x.jpg    Coop X
+corran.jpg    Corran
+corruptia.jpg    Corruptia
+coyote.jpg    Coyote
+cranium.jpg    Cranium
+criaturas-de-las-sombras.jpg    Criaturas de las Sombras
+cubitos.jpg    Cubitos
+codigo-secreto.jpg    Código Secreto
+danger-danger.jpg    Danger Danger
+dany.jpg    Dany
+deep-sea-adventure.jpg    Deep Sea Adventure
+deluxe-pit.jpg    Deluxe Pit
+describir-de-mierda.jpg    Describir de Mierda
+descubre-quien-robo-el-gallinero.jpg    Descubre Quién Robó el Gallinero
+despiertan.jpg    Despiertan
+detective.jpg    Detective
+detectives-paranormales.jpg    Detectives Paranormales
+dias-de-radio.jpg    Días de Radio
+difference.jpg    Difference
+divinity-derby.jpg    Divinity Derby
+dixit.jpg    Dixit
+dixit-disney.jpg    Dixit Disney
+dixit-odyssey.jpg    Dixit Odyssey
+do-or-drink.jpg    Do or Drink
+domino.jpg    Dominó
+dominion.jpg    Dominion
+dominio-de-los-elementos.jpg    Dominio de los Elementos
+don-t-get-got.jpg    Don't Get Got!
+dr-microbe.jpg    Dr. Microbe
+dragon-class.jpg    Dragon Class
+dragon-keepers.jpg    Dragon Keepers
+dragon-master.jpg    Dragon Master
+drinkopoly.jpg    Drinkopoly
+duelo-por-caza.jpg    Duelo por Caza
+dune.jpg    Dune
+dungeon-fighter.jpg    Dungeon Fighter
+dungeon-raiders.jpg    Dungeon Raiders
+el-ahorcado.jpg    El Ahorcado
+el-abejorro-tramposo.jpg    El Abejorro Tramposo
+el-dorado.jpg    El Dorado
+el-embustero.jpg    El Embustero
+el-huesped.jpg    El Huésped
+el-infiltrado.jpg    El Infiltrado
+el-laberinto-magico.jpg    El Laberinto Mágico
+el-resplandor.jpg    El Resplandor
+el-rey-de-los-dados.jpg    El Rey de los Dados
+el-senor-de-los-anillos-batalla-por-la-tierra-media.jpg    El Señor de los Anillos: Batalla por la Tierra Media
+el-tonto-del-pueblo.jpg    El Tonto del Pueblo
+el-tonto-del-pueblo-pasalo-con-tus-amigos.jpg    El Tonto del Pueblo: Pásalo con tus Amigos
+el-tonto-del-pueblo-repite-la-accion.jpg    El Tonto del Pueblo: Repite la Acción
+el-tonto-del-pueblo-sale-de-fiesta.jpg    El Tonto del Pueblo: Sale de Fiesta
+el-vende.jpg    El Vende
+eldritch-horror.jpg    Eldritch Horror
+ensemble.jpg    Ensemble
+escalation-earth.jpg    Escalation Earth
+espn-trivia-night.jpg    ESPN Trivia Night
+exit-kids.jpg    Exit Kids
+exploding-kittens.jpg    Exploding Kittens
+exploding-kittens-party-pack.jpg    Exploding Kittens Party Pack
+exploding-kittens-recipes-for-disaster.jpg    Exploding Kittens Recipes for Disaster
+exploding-kittens-good-vs-evil.jpg    Exploding Kittens: Good vs Evil
+fairy-tale-inn.jpg    Fairy Tale Inn
+fantasma-blitz.jpg    Fantasma Blitz
+fantasma-blitz-feliz-cumpleanos.jpg    Fantasma Blitz: Feliz Cumpleaños
+faraway.jpg    Faraway
+featherweight-fiesta.jpg    Featherweight Fiesta
+feed-the-kraken.jpg    Feed the Kraken
+five-tribes.jpg    Five Tribes
+fog-of-love.jpg    Fog of Love
+for-the-girls.jpg    For the Girls
+forero-vs-dinosaurio.jpg    Forero vs Dinosaurio
+funkoverse.jpg    Funkoverse
+futbol-brainbox.jpg    Fútbol: Brainbox
+game-of-thrones-hand-of-the-king.jpg    Game of Thrones: Hand of the King
+ganges.jpg    Ganges
+genial.jpg    Genial
+get-loud.jpg    Get Loud
+get-on-board.jpg    Get on Board
+go-cuckoo.jpg    Go Cuckoo
+good-face.jpg    Good Face
+guatafac.jpg    Guatafac
+guatafac-unos-ninos.jpg    Guatafac: Unos Niños
+gwent.jpg    Gwent
+halli-galli.jpg    Halli Galli
+hand-to-hand-wombat.jpg    Hand to Hand Wombat
+hanabi.jpg    Hanabi
+happy-little-dinosaurs.jpg    Happy Little Dinosaurs
+happy-salmon.jpg    Happy Salmon
+harry-potter-brain-box.jpg    Harry Potter Brain Box
+harry-potter-memo-magic.jpg    Harry Potter Memo / Magic
+harry-potter-time-s-up.jpg    Harry Potter Time's Up
+hash-10.jpg    Hash 10
+heat.jpg    Heat
+heaven-ale.jpg    Heaven & Ale
+hellapagos.jpg    Hellapagos
+helsinki-revelations.jpg    Helsinki Revelations
+here-to-slay.jpg    Here to Slay
+hero-realms.jpg    Hero Realms
+heroes-of-barcadia.jpg    Heroes of Barcadia
+high-score.jpg    High Score
+hitster-100-espanol.jpg    Hitster 100% Español
+hitster-bingo.jpg    Hitster: Bingo
+hitster-grandes-exitos.jpg    Hitster: Grandes Éxitos
+hitster-latino.jpg    Hitster: Latino
+hitster-lemazon.jpg    Hitster: Lemazon
+hitster-meme-party-game.jpg    Hitster: Meme Party Game
+hitster-summer-party.jpg    Hitster: Summer Party
+hombres-lobo.jpg    Hombres Lobo
+iceberg.jpg    Iceberg
+igoat.jpg    iGoat?
+incomodos-invitados.jpg    Incómodos Invitados
+incomodos-invitados-2.jpg    Incómodos Invitados 2
+jaipur.jpg    Jaipur
+jaws.jpg    Jaws
+jenga.jpg    Jenga
+jerusalem.jpg    Jerusalém
+joker-game.jpg    Joker Game
+juego-de-tronos.jpg    Juego de Tronos
+juego-de-tronos-el-juego-de-cartas.jpg    Juego de Tronos: El Juego de Cartas
+juego-de-tronos-el-juego-de-risk.jpg    Juego de Tronos: El Juego de Risk
+juego-de-tronos-el-juego-de-tablero.jpg    Juego de Tronos: El Juego de Tablero
+juicy-fruits.jpg    Juicy Fruits
+jugando-a-tus-amigos.jpg    Jugando a tus Amigos
+jungle-speed.jpg    Jungle Speed
+just-one.jpg    Just One
+katamino-family.jpg    Katamino Family
+katamino-tower-katamino.jpg    Katamino Tower / Katamino
+keyflower.jpg    Keyflower
+king-of-tokyo.jpg    King of Tokyo
+knives-out.jpg    Knives Out
+la-busqueda-de-la-felicidad.jpg    La Búsqueda de la Felicidad
+la-busqueda-del-planeta-x.jpg    La Búsqueda del Planeta X
+la-escoba-encantada.jpg    La Escoba Encantada
+la-fiesta.jpg    La Fiesta
+la-gran-mision.jpg    La Gran Misión
+la-isla-prohibida.jpg    La Isla Prohibida
+la-morada-maldita.jpg    La Morada Maldita
+la-partida-del-siglo.jpg    La Partida del Siglo
+la-resistencia.jpg    La Resistencia
+la-reventa.jpg    La Reventa
+las-aventuras-de-robin-hood.jpg    Las Aventuras de Robin Hood
+las-tabernas-de-valfonda.jpg    Las Tabernas de Valfonda
+las-vegas-royale.jpg    Las Vegas Royale
+last-8-furious.jpg    Last 8 Furious
+last-team.jpg    Last Team
+licho.jpg    Licho
+lineas-maestras.jpg    Líneas Maestras
+little-secret.jpg    Little Secret
+llamagedon.jpg    Llamagedón
+loot.jpg    Loot
+lora-capital.jpg    Lora Capital
+lords-of-vegas.jpg    Lords of Vegas
+lost-cities.jpg    Lost Cities
+loteria-del-bebe.jpg    Lotería del Bebé
+love-letter.jpg    Love Letter
+lulas.jpg    Lulas
+magic-maze.jpg    Magic Maze
+mal-trago.jpg    Mal Trago
+mandala-stones.jpg    Mandala Stones
+maniacal.jpg    Maniacal
+marabunta.jpg    Marabunta
+marvel-zombies.jpg    Marvel Zombies
+mascarade.jpg    Mascarade
+melasopla.jpg    Melasopla
+meme-the-game.jpg    Meme The Game
+meme-the-game-disney.jpg    Meme The Game: Disney
+mente-vacuna.jpg    Mente Vacuna
+mexican-train.jpg    Mexican Train
+mi-primer-bananagrams.jpg    Mi Primer Bananagrams
+mickey-and-the-beanstalk.jpg    Mickey and the Beanstalk
+micromacro-crime-city.jpg    MicroMacro: Crime City
+mindbug.jpg    Mindbug
+mind-gamers.jpg    Mind Gamers
+minecraft-builders-biomes.jpg    Minecraft: Builders & Biomes
+mister-pedo.jpg    Mister Pedo
+monopoly.jpg    Monopoly
+monopoly-builder.jpg    Monopoly Builder
+monopoly-pokemon.jpg    Monopoly Pokémon
+monopoly-secret-vault.jpg    Monopoly Secret Vault
+monkey-palace.jpg    Monkey Palace
+monster-madness.jpg    Monster Madness
+monstruo-de-colores.jpg    Monstruo de Colores
+mr-drink-games.jpg    Mr. Drink Games
+mtv-music.jpg    MTV Music
+muffin-time.jpg    Muffin Time
+munchkin-cthulhu-1-2-3-y-4.jpg    Munchkin Cthulhu 1, 2, 3 y 4
+mysterium.jpg    Mysterium
+mystery-house.jpg    Mystery House
+naipe-espanol.jpg    Naipe Español
+narcos.jpg    Narcos
+ni-si-ni-no.jpg    Ni Sí Ni No
+nimalia.jpg    Nimalia
+no-gracias.jpg    No Gracias
+nobel-run.jpg    Nobel Run
+nueva-era-mi-tierra.jpg    Nueva Era Mi Tierra
+obscurio.jpg    Obscurio
+oceanos.jpg    Océanos
+odin.jpg    Odin
+one-night-ultimate-werewolf.jpg    One Night Ultimate Werewolf
+optimus.jpg    Optimus
+ouch.jpg    Ouch
+out-of-this-world.jpg    Out of This World
+taco-gato-cabra-queso-pizza.jpg    Taco, Gato, Cabra, Queso, Pizza
+taco-gato-cabra-queso-pizza-halloween.jpg    Taco, Gato, Cabra, Queso, Pizza: Halloween
+palabras-basura.jpg    Palabras Basura
+pan-am.jpg    Pan Am
+panic-lab.jpg    Panic Lab
+panic-mansion.jpg    Panic Mansión
+para-el-mamon.jpg    Para el Mamón
+parada-royale.jpg    Parada Royale
+paren-la-nave.jpg    Parén la Nave
+paris.jpg    París
+paris-new-eden.jpg    París: New Eden
+patchwork.jpg    Patchwork
+peaky-blinders.jpg    Peaky Blinders
+peek-a-mouse.jpg    Peek a Mouse
+pelusas.jpg    Pelusas
+pick-a-cerdo.jpg    Pick a Cerdo
+pick-a-perro.jpg    Pick a Perro
+pictionary-air.jpg    Pictionary Air
+pictures.jpg    Pictures
+pimp.jpg    Pimp
+pistas-cruzadas.jpg    Pistas Cruzadas
+planet-3.jpg    Planet 3
+play-hit.jpg    Play Hit
+pocimas-y-brebajes.jpg    Pócimas y Brebajes
+polilla-tramposa.jpg    Polilla Tramposa
+pop-under-pressure.jpg    Pop Under Pressure
+poquer-de-bichos.jpg    Póquer de Bichos
+por-northwood.jpg    Por Northwood
+potion-explosion.jpg    Potion Explosion
+pradera.jpg    Pradera
+preguntas-de-mierda.jpg    Preguntas de Mierda
+prima-ballerina.jpg    Prima Ballerina
+prime-climb.jpg    Prime Climb
+principe.jpg    Príncipe
+pylos.jpg    Pylos
+qawale.jpg    Qawale
+que-me-estas-container.jpg    ¿Que me estás Container?
+que-llevo-en-la-maleta.jpg    Que Llevo en la Maleta
+que-no-se-te-caiga-el-jabon.jpg    Que No Se Te Caiga el Jabón
+quick-stop.jpg    Quick Stop
+quixo.jpg    Quixo
+quoridor.jpg    Quoridor
+quien-te-conoce-mejor.jpg    ¿Quién Te Conoce Mejor?
+ra.jpg    Ra
+rallyman.jpg    Rallyman
+raza-manzana.jpg    Raza Manzana
+red-cathedral.jpg    Red Cathedral
+remix-manuel.jpg    Remix Manuel
+remolacha.jpg    Remolacha
+republica-bananera-al-limite-del-humor.jpg    República Bananera: Al Límite del Humor
+republica-bananera-vacuna-espanola.jpg    República Bananera: Vacuna Española
+rescate.jpg    Rescate
+rhino-hero.jpg    Rhino Hero
+rhino-hero-missing-match.jpg    Rhino Hero: Missing Match
+rhino-hero-super-battle.jpg    Rhino Hero: Super Battle
+risk.jpg    Risk
+ritmo-y-bola.jpg    Ritmo y Bola
+river-dragons.jpg    River Dragons
+robinson-crusoe.jpg    Robinson Crusoe
+root.jpg    Root
+rummi-classic.jpg    Rummi Classic
+rush-m-d.jpg    Rush M.D.
+saboteur.jpg    Saboteur
+sagrada.jpg    Sagrada
+salud.jpg    Salud
+scrabble.jpg    Scrabble
+scrawl.jpg    Scrawl
+scream.jpg    Scream
+secret-hitler.jpg    Secret Hitler
+secret-night.jpg    Secret Night
+seinfeld.jpg    Seinfeld
+sequence.jpg    Sequence
+set.jpg    Set
+sheriff-de-nottingham.jpg    Sheriff de Nottingham
+shots-pong.jpg    Shots Pong
+sky-team.jpg    Sky Team
+skyjo-action.jpg    Skyjo Action
+smart-10.jpg    Smart 10
+smash-city.jpg    Smash City
+so-clover.jpg    So Clover
+sound-box.jpg    Sound Box
+soviet-kitchen.jpg    Soviet Kitchen
+space-cadets.jpg    Space Cadets
+spartacus.jpg    Spartacus
+speed-cups.jpg    Speed Cups
+splendor.jpg    Splendor
+splendor-duel.jpg    Splendor Duel
+spot-it-dobble.jpg    Spot It / Dobble
+spot-it-frozen.jpg    Spot It: Frozen
+spot-it-paw-patrol.jpg    Spot It: Paw Patrol
+spot-it-tortugas-ninja.jpg    Spot It: Tortugas Ninja
+spotty.jpg    Spotty
+star-wars.jpg    Star Wars
+starship.jpg    Starship
+stone-age.jpg    Stone Age
+stratego.jpg    Stratego
+strike.jpg    Strike
+superclub.jpg    Superclub
+superclub-try-size-expansion.jpg    Superclub Try Size Expansion
+superclub-expansion-oficial.jpg    Superclub: Expansión Oficial
+superclub-manager-kit.jpg    Superclub: Manager Kit
+sushi-go-party.jpg    Sushi Go Party
+syllabury.jpg    Syllabury
+tactic-lacta.jpg    Tactic / Lacta
+talisman.jpg    Talisman
+tapple-after-dark.jpg    Tapple After Dark
+ten.jpg    Ten
+the-castles-of-burgundy.jpg    The Castles of Burgundy
+the-chameleon.jpg    The Chameleon
+the-climbers.jpg    The Climbers
+the-godfather.jpg    The Godfather
+the-good-the-bad-and-the-munchkin.jpg    The Good, the Bad and the Munchkin
+the-grimwood.jpg    The Grimwood
+the-mind.jpg    The Mind
+the-mind-extreme.jpg    The Mind: Extreme
+the-mind-soulmates.jpg    The Mind: Soulmates
+the-sims.jpg    The Sims
+the-walking-dead.jpg    The Walking Dead
+throw-throw-burrito.jpg    Throw Throw Burrito
+tic-tac-boom.jpg    Tic Tac Boom
+ticket-to-ride-aventureros-al-tren.jpg    Ticket to Ride / ¡Aventureros al Tren!
+ticket-to-ride-america.jpg    Ticket to Ride: America
+ticket-to-ride-europa.jpg    Ticket to Ride: Europa
+ticket-to-ride-first-journey.jpg    Ticket to Ride: First Journey
+todo-el-mundo-miente.jpg    Todo el Mundo Miente
+top-gun.jpg    Top Gun
+torre-del-beso.jpg    Torre del Beso
+torres.jpg    Torres
+total-domination.jpg    Total Domination
+trio.jpg    Trio
+triolet.jpg    Triolet
+triominos.jpg    Triominos
+truth-or-drink.jpg    Truth or Drink
+tsuro.jpg    Tsuro
+turtle-splash.jpg    Turtle Splash
+ubongo-classic.jpg    Ubongo Classic
+un-dia-en-las-carreras.jpg    Un Día en las Carreras
+unicornio-destello.jpg    Unicornio Destello
+uno-flex.jpg    Uno Flex
+uno-gigante.jpg    Uno Gigante
+uno-no-mercy.jpg    Uno No Mercy
+uno-stacko.jpg    Uno Stacko
+uno-teams.jpg    Uno Teams
+uno-venezuela.jpg    Uno Venezuela
+unstable-unicorns.jpg    Unstable Unicorns
+ureck-sav.jpg    Ureck Sav
+velocipuzzle.jpg    Velocipuzzle
+verdad-o-reto-cumpleanos.jpg    Verdad o Reto Cumpleaños
+villa-paletti.jpg    Villa Paletti
+villainous-disney.jpg    Villainous: Disney
+villainous-marvel.jpg    Villainous: Marvel
+virus.jpg    Virus!
+virus-2.jpg    Virus! 2
+virus-halloween.jpg    Virus! Halloween
+virus-marvel.jpg    Virus! Marvel
+walkie-talkie.jpg    Walkie Talkie
+welcome-to-the-moon.jpg    Welcome to the Moon
+what-do-you-meme.jpg    What Do You Meme?
+whirly-derby.jpg    Whirly Derby
+winner-s-circle.jpg    Winner's Circle
+wizardry.jpg    Wizardry
+wordsmith.jpg    Wordsmith
+yo-nunca-nunca.jpg    Yo Nunca Nunca
+yogi.jpg    Yogi
+zombie-kittens.jpg    Zombie Kittens

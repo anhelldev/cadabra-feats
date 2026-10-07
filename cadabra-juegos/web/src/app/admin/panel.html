@@ -1,0 +1,253 @@
+<app-cabecera-admin titulo="Panel de juegos" />
+
+<main class="ancho">
+  <section class="cifras" aria-label="Resumen">
+    <button type="button" [class.activa]="visible() === 'todos'" (click)="filtrar(visible, 'todos')">
+      <b>{{ cuentas().total }}</b> juegos
+    </button>
+    <button type="button" [class.activa]="visible() === 'visibles'" (click)="filtrar(visible, 'visibles')">
+      <b>{{ cuentas().visibles }}</b> visibles
+    </button>
+    <button type="button" [class.activa]="visible() === 'ocultos'" (click)="filtrar(visible, 'ocultos')">
+      <b>{{ cuentas().ocultos }}</b> ocultos
+    </button>
+    <button type="button" [class.activa]="incompletos()" (click)="filtrar(incompletos, !incompletos())">
+      <b>{{ cuentas().incompletos }}</b> sin completar
+    </button>
+    <button type="button" [class.activa]="local() === 'si'" (click)="filtrar(local, local() === 'si' ? '' : 'si')">
+      <b>{{ cuentas().enLocal }}</b> en el local
+    </button>
+    <button type="button" [class.activa]="portadaFiltro() === 'sin'" (click)="filtrar(portadaFiltro, portadaFiltro() === 'sin' ? '' : 'sin')">
+      <b>{{ cuentas().sinPortada }}</b> sin portada
+    </button>
+    @if (cuentas().porDecidir) {
+      <button type="button" [class.activa]="bggFiltro() === 'dudoso'" (click)="filtrar(bggFiltro, bggFiltro() === 'dudoso' ? '' : 'dudoso')">
+        <b>{{ cuentas().porDecidir }}</b> BGG por decidir
+      </button>
+    }
+  </section>
+
+  @if (mostrarSync()) {
+    <app-sync-bgg (verDudosos)="verDudosos()" (cambios)="cargar()" />
+  }
+
+  <section class="filtros" aria-label="Filtros">
+    <label class="campo crece">
+      Buscar
+      <input
+        type="search"
+        placeholder="Nombre o slug…"
+        autocomplete="off"
+        [value]="q()"
+        (input)="filtrar(q, $any($event.target).value)"
+      />
+    </label>
+    <label class="campo">
+      Visibilidad
+      <select [value]="visible()" (change)="filtrar(visible, $any($event.target).value)">
+        <option value="todos">Todos</option>
+        <option value="visibles">Visibles</option>
+        <option value="ocultos">Ocultos</option>
+      </select>
+    </label>
+    <label class="campo">
+      Origen
+      <select [value]="origen()" (change)="filtrar(origen, $any($event.target).value)">
+        <option value="">Todos</option>
+        <option value="catalogo">Catálogo original</option>
+        <option value="tienda">Importado de la tienda</option>
+        <option value="local">Página del local</option>
+        <option value="bgg">Agregado desde BGG</option>
+      </select>
+    </label>
+    <label class="campo">
+      En el local
+      <select [value]="local()" (change)="filtrar(local, $any($event.target).value)">
+        <option value="">Todos</option>
+        <option value="si">Sí</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+    <label class="check">
+      <input type="checkbox" [checked]="revisar()" (change)="filtrar(revisar, $any($event.target).checked)" />
+      Para revisar
+    </label>
+    <label class="campo">
+      Portada
+      <select [value]="portadaFiltro()" (change)="filtrar(portadaFiltro, $any($event.target).value)">
+        <option value="">Todas</option>
+        <option value="sin">Sin portada</option>
+        <option value="con">Con portada</option>
+      </select>
+    </label>
+    <label class="campo">
+      BGG
+      <select [value]="bggFiltro()" (change)="filtrar(bggFiltro, $any($event.target).value)">
+        <option value="">Todos</option>
+        <option value="ok">Vinculado</option>
+        <option value="dudoso">Por decidir</option>
+        <option value="sin_resultado">Sin resultado</option>
+        <option value="pendiente">Pendiente</option>
+        <option value="omitido">Omitido</option>
+      </select>
+    </label>
+    <button class="boton secundario" type="button" [attr.aria-expanded]="mostrarSync()" (click)="mostrarSync.set(!mostrarSync())">
+      Sincronizar BGG
+    </button>
+    <button class="boton secundario" type="button" [disabled]="!gruposDup().length" (click)="verDuplicados.set(true)">
+      Duplicados ({{ gruposDup().length }})
+    </button>
+    <button class="boton secundario" type="button" [disabled]="!cuentas().porDecidir" (click)="revisandoBgg.set(true)">
+      Revisar BGG ({{ cuentas().porDecidir }})
+    </button>
+    <button class="boton" type="button" (click)="buscarBgg.set('agregar')">Agregar juego</button>
+  </section>
+
+  <p class="cuenta" aria-live="polite">
+    @if (cargando()) {
+      Cargando…
+    } @else {
+      {{ filtrados().length }} {{ filtrados().length === 1 ? 'resultado' : 'resultados' }}
+    }
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col"><span class="oculto">Portada</span></th>
+        <th scope="col">Juego</th>
+        <th scope="col">Categoría</th>
+        <th scope="col">Jug.</th>
+        <th scope="col">Duración</th>
+        <th scope="col">Dificultad</th>
+        <th scope="col">Local</th>
+        <th scope="col">Visible</th>
+        <th scope="col"><span class="oculto">Acciones</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (j of pagina(); track j.id) {
+        <tr>
+          <td class="mini">
+            @if (j.portada) {
+              <img [src]="miniatura(j)" alt="" loading="lazy" width="44" height="44" />
+            }
+          </td>
+          <td>
+            <button class="nombre" type="button" (click)="editar(j)">{{ j.nombre }}</button>
+            <span class="sub">
+              {{ j.slug }}
+              @if (j.origen === 'tienda') {
+                <span class="etiqueta">tienda</span>
+              }
+              @if (j.revisar) {
+                <span class="etiqueta aviso">revisar</span>
+              }
+              @if (solicitudes.pendientesPorJuego().get(j.id); as n) {
+                <span class="etiqueta aviso">{{ n }} {{ n === 1 ? 'solicitud' : 'solicitudes' }}</span>
+              }
+              @if (j.bgg_estado === 'ok') {
+                <span class="etiqueta">BGG</span>
+              } @else if (j.bgg_estado === 'dudoso') {
+                <span class="etiqueta aviso">BGG: decidir</span>
+              }
+            </span>
+          </td>
+          <td>{{ j.categoria ?? '—' }}</td>
+          <td class="num">{{ jugadores(j) }}</td>
+          <td class="num">{{ duracion(j) }}</td>
+          <td>{{ j.dificultad ? niveles[j.dificultad] : '—' }}</td>
+          <td>
+            <button
+              class="interruptor"
+              type="button"
+              role="switch"
+              [attr.aria-checked]="j.en_local"
+              [attr.aria-label]="'En el local: ' + j.nombre"
+              [disabled]="guardando().has(j.id)"
+              (click)="alternar(j, 'en_local')"
+            >
+              <span></span>
+            </button>
+            <span class="etq-movil" aria-hidden="true">Local</span>
+          </td>
+          <td>
+            <button
+              class="interruptor"
+              type="button"
+              role="switch"
+              [attr.aria-checked]="j.visible"
+              [attr.aria-label]="'Visible: ' + j.nombre"
+              [disabled]="guardando().has(j.id) || (!j.visible && j._faltan.length > 0)"
+              [title]="!j.visible && j._faltan.length ? 'Falta: ' + j._faltan.join(', ') : ''"
+              (click)="alternar(j, 'visible')"
+            >
+              <span></span>
+            </button>
+            <span class="etq-movil" aria-hidden="true">Visible</span>
+            @if (!j.visible && j._faltan.length) {
+              <span class="falta">Falta {{ j._faltan.length }} dato{{ j._faltan.length === 1 ? '' : 's' }}</span>
+            }
+          </td>
+          <td class="acciones">
+            <button class="boton secundario chico" type="button" [attr.aria-label]="'Editar ' + j.nombre" (click)="editar(j)">
+              Editar
+            </button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+
+  @if (filtrados().length > pagina().length) {
+    <p class="mas">
+      <button class="boton secundario" type="button" (click)="limite.set(limite() + 100)">
+        Mostrar más ({{ filtrados().length - pagina().length }} restantes)
+      </button>
+    </p>
+  }
+</main>
+
+<app-pie />
+
+@if (aviso(); as a) {
+  <p class="toast" [class.mal]="a.error" role="status">{{ a.texto }}</p>
+}
+
+@if (revisandoBgg()) {
+  <app-revisar-bgg
+    [juegos]="juegos()"
+    (actualizado)="desdeRevision($event)"
+    (fusionado)="fusionado($event)"
+    (buscarManual)="buscarBgg.set($event)"
+    (cerrar)="revisandoBgg.set(false)"
+  />
+}
+
+@if (verDuplicados()) {
+  <app-duplicados [grupos]="gruposDup()" [juegos]="juegos()" (fusionado)="fusionado($event)" (cerrar)="verDuplicados.set(false)" />
+}
+
+@if (buscarBgg(); as b) {
+  <app-buscar-bgg
+    [juegoId]="b === 'agregar' ? null : b.id"
+    [consultaInicial]="b === 'agregar' ? '' : b.nombre"
+    (ficha)="desdeBgg($event)"
+    (vinculado)="vinculado($event)"
+    (manual)="crearManual()"
+    (cerrar)="buscarBgg.set(null)"
+  />
+}
+
+@if (editando(); as e) {
+  <app-editor
+    [juego]="e === 'nuevo' ? null : e"
+    [precarga]="precarga()"
+    [juegos]="juegos()"
+    [categorias]="categorias()"
+    (guardado)="guardado($event)"
+    (borrado)="borrado($event)"
+    (buscarEnBgg)="buscarBgg.set(e === 'nuevo' ? 'agregar' : e)"
+    (cerrar)="editando.set(null)"
+  />
+}

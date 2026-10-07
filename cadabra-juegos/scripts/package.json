@@ -1,0 +1,10 @@
+{
+  "name": "cadabra-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Herramientas de mantenimiento (portadas, datos de la tienda). No forma parte de la web.",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "sharp": "^0.34.0"
+  }
+}

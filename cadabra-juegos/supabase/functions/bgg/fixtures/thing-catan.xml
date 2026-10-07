@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
+  <item type="boardgame" id="13">
+    <thumbnail>https://cf.geekdo-images.com/thumb/catan.jpg</thumbnail>
+    <image>https://cf.geekdo-images.com/original/catan.jpg</image>
+    <name type="primary" sortindex="1" value="CATAN" />
+    <name type="alternate" sortindex="1" value="Los Colonos de Catán" />
+    <name type="alternate" sortindex="1" value="Die Siedler von Catan" />
+    <description>In CATAN (formerly The Settlers of Catan), players try to be the dominant force on the island of Catan by building settlements, cities, and roads.&amp;#10;&amp;#10;On each turn dice are rolled &amp;mdash; resources!&amp;#10;&amp;#10;Won&amp;rsquo;t break.</description>
+    <yearpublished value="1995" />
+    <minplayers value="3" />
+    <maxplayers value="4" />
+    <playingtime value="120" />
+    <minplaytime value="60" />
+    <maxplaytime value="120" />
+    <minage value="10" />
+    <link type="boardgamecategory" id="1021" value="Economic" />
+    <link type="boardgamecategory" id="1026" value="Negotiation" />
+    <link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+    <link type="boardgamemechanic" id="2008" value="Trading" />
+    <link type="boardgamedesigner" id="11" value="Klaus Teuber" />
+    <link type="boardgamepublisher" id="37" value="KOSMOS" />
+    <statistics page="1">
+      <ratings>
+        <usersrated value="120000" />
+        <average value="7.1062" />
+        <averageweight value="2.3" />
+        <ranks>
+          <rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="450" bayesaverage="7.0" />
+        </ranks>
+      </ratings>
+    </statistics>
+    <videos total="3">
+      <video id="1" title="Catan en 5 minutos" category="instructional" language="Spanish" link="https://www.youtube.com/watch?v=aaa" username="u" postdate="2020-01-01" />
+      <video id="2" title="Catan review" category="review" language="English" link="https://www.youtube.com/watch?v=bbb" username="u" postdate="2020-01-02" />
+      <video id="3" title="Roto" category="other" language="English" link="javascript:alert(1)" username="u" postdate="2020-01-03" />
+    </videos>
+  </item>
+</items>

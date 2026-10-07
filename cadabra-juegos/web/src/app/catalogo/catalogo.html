@@ -1,0 +1,165 @@
+  <header class="tapete">
+    <div class="ancho">
+      <p class="marca">Juegos de Cadabra</p>
+      <h1 id="pregunta">¿Cuántos van a jugar?</h1>
+      <div class="sillas" role="group" aria-labelledby="pregunta">
+        <button class="silla todos" type="button" [attr.aria-pressed]="jug() === 0" (click)="jug.set(0)">
+          Da igual
+        </button>
+        @for (n of sillas; track n) {
+          <button
+            class="silla"
+            type="button"
+            [attr.aria-pressed]="jug() === n"
+            [attr.aria-label]="etiquetaSilla(n)"
+            (click)="jug.set(n)"
+          >
+            {{ n === 8 ? '8+' : n }}
+          </button>
+        }
+      </div>
+    </div>
+  </header>
+
+  <main class="ancho">
+    <section class="filtros" aria-label="Filtros">
+      <div>
+        <p class="titulo-grupo" id="t-dif">Dificultad</p>
+        <div class="dados" role="group" aria-labelledby="t-dif">
+          @for (n of [1, 2, 3, 4, 5]; track n) {
+            <button
+              class="dado-btn"
+              type="button"
+              [attr.aria-pressed]="dif() === n"
+              [disabled]="porNivel()[n] === 0 && dif() !== n"
+              (click)="alternarDif(n)"
+            >
+              <app-dado [valor]="n" [tam]="30" />
+              <span>
+                <b>{{ niveles[n] }}</b>
+                <small>{{ porNivel()[n] }} {{ porNivel()[n] === 1 ? 'juego' : 'juegos' }}</small>
+              </span>
+            </button>
+          }
+        </div>
+      </div>
+      <div class="fila">
+        <label class="campo crece">
+          Buscar por nombre
+          <input
+            type="search"
+            placeholder="Catan, Dixit, Virus…"
+            autocomplete="off"
+            [value]="q()"
+            (input)="q.set($any($event.target).value)"
+          />
+        </label>
+        <label class="campo">
+          Categoría
+          <select [value]="cat()" (change)="cat.set($any($event.target).value)">
+            <option value="">Todas</option>
+            @for (c of categorias(); track c) {
+              <option [value]="c">{{ c }}</option>
+            }
+          </select>
+        </label>
+        <label class="campo">
+          Duración
+          <select [value]="dur()" (change)="dur.set(+$any($event.target).value)">
+            <option value="0">Cualquiera</option>
+            <option value="15">Hasta 15 min</option>
+            <option value="30">Hasta 30 min</option>
+            <option value="60">Hasta 1 hora</option>
+            <option value="120">Hasta 2 horas</option>
+          </select>
+        </label>
+        <label class="campo">
+          Ordenar por
+          <select [value]="orden()" (change)="orden.set($any($event.target).value)">
+            <option value="nombre">Nombre</option>
+            <option value="facil">Más fáciles primero</option>
+            <option value="dificil">Más difíciles primero</option>
+            <option value="corto">Más cortos primero</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <div class="barra">
+      <p class="cuenta" aria-live="polite">
+        @switch (estado()) {
+          @case ('cargando') { Cargando juegos… }
+          @case ('error') { No se pudieron cargar los juegos }
+          @default {
+            @if (resultados().length === juegos().length) {
+              {{ juegos().length }} juegos en el catálogo
+            } @else {
+              {{ resultados().length }} de {{ juegos().length }} juegos
+            }
+          }
+        }
+      </p>
+      <div class="barra-acciones">
+        <label class="check">
+          <input type="checkbox" [checked]="soloLocal()" (change)="soloLocal.set($any($event.target).checked)" />
+          Solo los que hay en el local
+        </label>
+        <button class="enlace" type="button" (click)="limpiar()">Quitar filtros</button>
+        <button class="boton girar" type="button" [disabled]="!resultados().length" (click)="ruleta.set(true)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M12 2v10l7.07 7.07M12 12 4.93 19.07M12 12H2" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
+          Gira la ruleta
+        </button>
+      </div>
+    </div>
+    <div class="cab" aria-hidden="true">
+      <span>Juego</span><span>Jugadores</span><span>Duración</span><span>Dificultad</span><span>Edad</span>
+    </div>
+    <ul class="lista">
+      @for (j of mostrados(); track j.id) {
+        <li class="juego" (click)="abierto.set(j)">
+          <span class="nombre">
+            <span class="mini" [style.--c]="colores()[j.categoria] ?? '#715091'">
+              @if (miniatura(j); as src) {
+                <img [src]="src" alt="" loading="lazy" width="52" height="52" (error)="$any($event.target).remove()" />
+              }
+            </span>
+            <span class="texto">
+              <button class="abrir" type="button">{{ j.nombre }}</button>
+              <span class="cat">
+                {{ j.categoria }}
+                @if (j.en_local) {
+                  <span class="local">En el local</span>
+                }
+              </span>
+            </span>
+          </span>
+          <span class="dato">{{ jugadores(j) }} jug.</span>
+          <span class="dato">{{ duracion(j) }}</span>
+          <span class="dif"><app-dado [valor]="j.dificultad" [tam]="20" />{{ niveles[j.dificultad] }}</span>
+          <span class="dato">{{ j.edad_min }}+</span>
+        </li>
+      } @empty {
+        @if (estado() === 'listo') {
+          <li class="vacio">
+            <b>Ningún juego coincide con estos filtros</b>
+            Prueba con otro número de jugadores o quita la dificultad.
+          </li>
+        }
+      }
+      <li #centinela class="centinela" aria-hidden="true"></li>
+    </ul>
+  </main>
+
+  <app-pie [bgg]="conBgg" />
+
+  @if (ruleta()) {
+    <app-ruleta [candidatos]="resultados()" (ver)="verDesdeRuleta($event)" (cerrar)="ruleta.set(false)" />
+  }
+
+  @if (abierto(); as j) {
+    <app-ficha [juego]="j" [color]="colores()[j.categoria] ?? '#715091'" (cerrar)="abierto.set(null)" />
+  }
+

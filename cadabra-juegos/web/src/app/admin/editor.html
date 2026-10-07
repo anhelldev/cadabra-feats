@@ -1,0 +1,198 @@
+<dialog #dialogo aria-labelledby="e-titulo" (close)="cerrar.emit()" (click)="cerrarSiFuera($event)">
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+    <header>
+      <h2 id="e-titulo">{{ juego() ? 'Editar juego' : 'Nuevo juego' }}</h2>
+      @if (juego()?.url_tienda) {
+        <a class="enlace" [href]="juego()!.url_tienda" target="_blank" rel="noopener">Ver en la tienda</a>
+      }
+    </header>
+
+    <div class="cuerpo">
+      <div class="portada">
+        @if (portada()) {
+          <img [src]="portada()" alt="Portada" />
+        } @else {
+          <span>Sin portada</span>
+        }
+        <label class="boton secundario subir">
+          Subir imagen
+          <input type="file" accept="image/webp,image/jpeg,image/png" (change)="subir($event)" />
+        </label>
+        <label class="campo">
+          o URL de la imagen
+          <input formControlName="portada" type="url" placeholder="https://…" />
+        </label>
+      </div>
+
+      <div class="campos">
+        <label class="campo ancho2">
+          Nombre
+          <input formControlName="nombre" required />
+        </label>
+        <label class="campo ancho2">
+          Slug
+          <input formControlName="slug" required />
+          @if (form.controls.slug.touched && form.controls.slug.invalid) {
+            <small class="error">Solo minúsculas, números y guiones (ej. 7-wonders-duel).</small>
+          }
+        </label>
+        <label class="campo ancho2">
+          Categoría
+          <select formControlName="categoria">
+            <option [ngValue]="null">Sin categoría</option>
+            @for (c of categorias(); track c.nombre) {
+              <option [ngValue]="c.nombre">{{ c.nombre }}</option>
+            }
+          </select>
+        </label>
+        <label class="campo">
+          Jugadores mín.
+          <input formControlName="jugadores_min" type="number" min="1" />
+        </label>
+        <label class="campo">
+          Jugadores máx.
+          <input formControlName="jugadores_max" type="number" min="1" />
+        </label>
+        @if (form.errors?.['rango']) {
+          <small class="error ancho2">El máximo de jugadores no puede ser menor que el mínimo.</small>
+        }
+        <label class="campo">
+          Duración mín. (min)
+          <input formControlName="duracion_min" type="number" min="1" />
+        </label>
+        <label class="campo">
+          Duración máx. (opcional)
+          <input formControlName="duracion_max" type="number" min="1" />
+        </label>
+        @if (form.errors?.['rangoDuracion']) {
+          <small class="error ancho2">La duración máxima no puede ser menor que la mínima.</small>
+        }
+        <label class="campo">
+          Edad mínima
+          <input formControlName="edad_min" type="number" min="0" />
+        </label>
+        <label class="campo">
+          Dificultad
+          <select formControlName="dificultad">
+            <option [ngValue]="null">Sin definir</option>
+            @for (n of [1, 2, 3, 4, 5]; track n) {
+              <option [ngValue]="n">{{ n }} · {{ niveles[n] }}</option>
+            }
+          </select>
+        </label>
+        <label class="campo ancho2">
+          Descripción
+          <textarea formControlName="descripcion" rows="3"></textarea>
+          @if (!form.controls.descripcion.value && juego()?.descripcion_tienda) {
+            <small>En el catálogo se muestra la de la tienda: “{{ juego()!.descripcion_tienda }}”</small>
+          }
+        </label>
+        <label class="campo ancho2">
+          Consejos para empezar (uno por línea)
+          <textarea formControlName="tips" rows="3"></textarea>
+        </label>
+        <label class="campo ancho2">
+          Enlace a la tienda
+          <input formControlName="url_tienda" type="url" />
+        </label>
+        <label class="check ancho2">
+          <input type="checkbox" formControlName="revisar" />
+          Datos estimados, hay que revisarlos
+        </label>
+        <label class="check ancho2">
+          <input type="checkbox" formControlName="en_local" />
+          Está en el local
+        </label>
+        <label class="check ancho2 destacado">
+          <input type="checkbox" formControlName="visible" [attr.aria-describedby]="faltan().length ? 'e-faltan' : null" />
+          Visible en la lista de juegos para jugar
+        </label>
+        @if (faltan().length) {
+          <small id="e-faltan" class="ancho2 nota">Para hacerlo visible falta: {{ faltan().join(', ') }}.</small>
+        }
+      </div>
+    </div>
+
+    <section class="bgg" aria-label="BoardGameGeek">
+      <h3>BoardGameGeek</h3>
+      @if (datosBgg(); as d) {
+        @if (d.bgg_id) {
+          <p>
+            Vinculado a <a [href]="enlace()" target="_blank" rel="noopener">#{{ d.bgg_id }}</a>
+            @if (d.bgg_datos; as b) {
+              <strong>{{ b.nombre }}</strong>
+              @if (b.anio) { · {{ b.anio }} }
+              @if (b.rating) { · ★ {{ b.rating }} ({{ b.votos }} votos) }
+              @if (b.peso) { · peso {{ b.peso }}/5 }
+              @if (b.ranking) { · puesto #{{ b.ranking }} }
+            }
+          </p>
+          @if (d.bgg_datos; as b) {
+            @if (b.disenadores.length) { <p class="fino">Diseño: {{ b.disenadores.join(', ') }}</p> }
+            @if (b.mecanicas.length) { <p class="fino">Mecánicas: {{ b.mecanicas.join(', ') }}</p> }
+          }
+          @if (d.videos?.length) {
+            <ul class="videos">
+              @for (v of d.videos; track v.id) {
+                <li><a [href]="v.url" target="_blank" rel="noopener">{{ v.titulo }}</a> <span>{{ v.categoria }}{{ v.idioma ? ' · ' + v.idioma : '' }}</span></li>
+              }
+            </ul>
+          }
+        } @else {
+          <p class="fino">Este juego no está vinculado a BGG.</p>
+        }
+      }
+      @if (juego(); as j) {
+        @if (j.bgg_estado === 'dudoso' && j.bgg_candidatos.length) {
+          <p class="fino">BGG encontró varias opciones; elige la correcta:</p>
+          <ul class="candidatos">
+            @for (c of j.bgg_candidatos; track c.id) {
+              <li>
+                <span>{{ c.nombre }} @if (c.anio) { ({{ c.anio }}) } <small>{{ c.tipo }}</small>
+                  @if (titular(c); as t) {
+                    <em>— ya vinculado a «{{ t.nombre }}». Si es el mismo juego, fusiónalos desde «Revisar BGG» o «Duplicados».</em>
+                  } @else if (c.motivo) { <em>— {{ c.motivo }}</em> }</span>
+                <button class="ojo" type="button" [attr.aria-label]="'Ver detalle de ' + c.nombre" title="Ver detalle" (click)="detalle.set(c)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                      <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                      <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </button>
+                  <button class="boton secundario" type="button" [disabled]="ocupado() || !!titular(c)" (click)="elegirCandidato(c)">Vincular</button>
+              </li>
+            }
+          </ul>
+        }
+        <button class="boton secundario" type="button" (click)="buscarEnBgg.emit()">
+          {{ j.bgg_id ? 'Cambiar vínculo con BGG' : 'Buscar en BGG' }}
+        </button>
+      }
+    </section>
+
+    @if (error()) {
+      <p class="error mensaje" role="alert">{{ error() }}</p>
+    }
+
+    <footer>
+      @if (juego()) {
+        <button class="boton peligro" type="button" [disabled]="ocupado()" (click)="borrar()">
+          {{ confirmarBorrado() ? '¿Seguro? Pulsa otra vez' : 'Borrar' }}
+        </button>
+      }
+      <span class="espacio"></span>
+      <button class="boton secundario" type="button" (click)="dialogo.close()">Cancelar</button>
+      <button class="boton" type="submit" [disabled]="ocupado()">{{ ocupado() ? 'Guardando…' : 'Guardar' }}</button>
+    </footer>
+  </form>
+</dialog>
+
+@if (detalle(); as d) {
+  <app-detalle-bgg
+    [candidato]="d"
+    [puedeElegir]="!titular(d)"
+    textoElegir="Vincular este"
+    [aviso]="avisoBloqueo(d)"
+    (elegir)="elegirDesdeDetalle(d)"
+    (cerrar)="detalle.set(null)"
+  />
+}

@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "cadabra", "runtimeExecutable": "npx", "runtimeArgs": ["-y", "serve", "/Users/angellarreal/Documents/proyectos/cadabra-juegos", "-l", "5173"], "port": 5173 },
+    { "name": "web", "url": "http://localhost:4200", "port": 4200 }
+  ]
+}

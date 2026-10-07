@@ -1,0 +1,239 @@
+.cifras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  padding: 20px 0 0;
+}
+.cifras button {
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  background: var(--carta);
+  cursor: pointer;
+  color: var(--tenue);
+}
+.cifras b {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.6rem;
+  color: var(--tinta);
+  line-height: 1.1;
+}
+.cifras .activa {
+  border-color: var(--accion);
+  box-shadow: inset 0 0 0 2px var(--accion);
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+  padding: 16px 0 6px;
+}
+.campo.crece {
+  flex: 1 1 240px;
+}
+.check {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  height: 42px;
+  font-size: 0.9rem;
+}
+.cuenta {
+  margin: 8px 0;
+  font-family: var(--display);
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--tenue);
+  padding: 8px 8px;
+  border-bottom: 2px solid var(--tinta);
+}
+td {
+  padding: 8px;
+  border-bottom: 1px solid var(--linea);
+  vertical-align: middle;
+}
+.mini {
+  width: 60px;
+}
+.mini img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #fff;
+}
+.nombre {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+.nombre:hover {
+  text-decoration: underline;
+}
+.sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--tenue);
+}
+.etiqueta {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 7px;
+  border-radius: 999px;
+  border: 1px solid var(--linea);
+  font-size: 0.72rem;
+}
+.etiqueta.aviso {
+  color: var(--aviso);
+  border-color: currentColor;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+.falta {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--aviso);
+}
+.oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.interruptor {
+  width: 44px;
+  height: 26px;
+  border-radius: 999px;
+  border: 0;
+  padding: 3px;
+  background: var(--linea);
+  cursor: pointer;
+  display: flex;
+}
+.interruptor span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+  transition: transform 0.15s;
+}
+.interruptor[aria-checked='true'] {
+  background: var(--accion);
+}
+.interruptor[aria-checked='true'] span {
+  transform: translateX(18px);
+}
+.interruptor[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.mas {
+  text-align: center;
+  padding: 16px 0 40px;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--tinta);
+  color: var(--mesa);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  max-width: calc(100vw - 32px);
+}
+.toast.mal {
+  background: var(--aviso);
+  color: #fff;
+}
+
+.boton.chico {
+  height: 34px;
+  padding: 0 14px;
+  font-size: 0.88rem;
+}
+.acciones {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.etq-movil {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .etq-movil {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: var(--tenue);
+    text-align: center;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    gap: 2px 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--linea);
+  }
+  td {
+    border: 0;
+    padding: 0;
+  }
+  td.mini {
+    grid-row: 1 / span 5;
+  }
+  td:not(.mini):nth-child(-n + 6) {
+    grid-column: 2;
+  }
+  td:nth-child(7),
+  td:nth-child(8) {
+    grid-column: 3;
+    align-self: center;
+  }
+  td:nth-child(7) {
+    grid-row: 1 / span 2;
+  }
+  td:nth-child(8) {
+    grid-row: 3 / span 3;
+  }
+  td.acciones {
+    grid-column: 2;
+    text-align: left;
+    margin-top: 4px;
+  }
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5),
+  td:nth-child(6) {
+    font-size: 0.8rem;
+    color: var(--tenue);
+  }
+}

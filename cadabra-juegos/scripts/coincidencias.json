@@ -1,0 +1,3642 @@
+[
+ {
+  "id": 1,
+  "juego": "5 Minute Mystery",
+  "tiendaId": 10388,
+  "producto": "5 MINUTES MYSTERY",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 2,
+  "juego": "7 Wonders",
+  "tiendaId": 10392,
+  "producto": "7 WONDERS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 3,
+  "juego": "7 Wonders Duel",
+  "tiendaId": 10392,
+  "producto": "7 WONDERS",
+  "nota": 0.57,
+  "estado": "sin"
+ },
+ {
+  "id": 4,
+  "juego": "13 Ghosts",
+  "tiendaId": 10383,
+  "producto": "13 GHOST",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 5,
+  "juego": "25 Outlaws",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 6,
+  "juego": "25 Outlets",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 7,
+  "juego": "Adivina En 10",
+  "tiendaId": 11405,
+  "producto": "SMART 10",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 8,
+  "juego": "Adivina Quién?",
+  "tiendaId": 11295,
+  "producto": "QUIEN TE CONOCE MEJOR",
+  "nota": 0.22,
+  "estado": "sin"
+ },
+ {
+  "id": 9,
+  "juego": "Adult Drinking Games",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 10,
+  "juego": "Aire, Tierra y Mar",
+  "tiendaId": 10398,
+  "producto": "AIRE TIERRA Y MAR",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 11,
+  "juego": "Akropolis",
+  "tiendaId": 10400,
+  "producto": "AKROPOLIS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 12,
+  "juego": "Alianza Épica",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 13,
+  "juego": "Alquimistas",
+  "tiendaId": 10406,
+  "producto": "ALQUIMISTAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 14,
+  "juego": "Alma Mater",
+  "tiendaId": 10405,
+  "producto": "ALMA MATER",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 15,
+  "juego": "Amigos de Mierda",
+  "tiendaId": 11286,
+  "producto": "PREGUNTAS DE MIERDA",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 16,
+  "juego": "Among Cultists",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 17,
+  "juego": "Anarchy Pancakes",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 18,
+  "juego": "Anno 1800",
+  "tiendaId": 10996,
+  "producto": "JERUSALEM ANNO DOMINI",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 19,
+  "juego": "Aqua",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 20,
+  "juego": "Around the World",
+  "tiendaId": 10444,
+  "producto": "AROUND THE WORLD DISNEY",
+  "nota": 0.92,
+  "estado": "probable"
+ },
+ {
+  "id": 21,
+  "juego": "Arkham Horror: The Card Game",
+  "tiendaId": 11526,
+  "producto": "THE ORAL SEX CARD GAME",
+  "nota": 0.4,
+  "estado": "sin"
+ },
+ {
+  "id": 22,
+  "juego": "Auzou / Ouga Bouga",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 23,
+  "juego": "Avalon",
+  "tiendaId": 10448,
+  "producto": "AVALON",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 24,
+  "juego": "Alzad Vuestras Copas",
+  "tiendaId": 10407,
+  "producto": "ALZAD VUESTRAS COPAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 25,
+  "juego": "Bahamas",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 26,
+  "juego": "Baraja para Citar",
+  "tiendaId": 11131,
+  "producto": "MISKATONIC ESCUELA PARA SENORITAS",
+  "nota": 0.11,
+  "estado": "sin"
+ },
+ {
+  "id": 27,
+  "juego": "Barking Kittens",
+  "tiendaId": 10817,
+  "producto": "EXPLODING KITTEN BARKING KITTENS",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 28,
+  "juego": "Basta",
+  "tiendaId": 10453,
+  "producto": "BASTA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 29,
+  "juego": "Basta 20",
+  "tiendaId": 10453,
+  "producto": "BASTA",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 30,
+  "juego": "Bears vs Babies",
+  "tiendaId": 11481,
+  "producto": "TACO VS BURRITO",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 31,
+  "juego": "Beat Stitch",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 32,
+  "juego": "Bedroom Battle",
+  "tiendaId": 10455,
+  "producto": "BEDROOM BATTLE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 33,
+  "juego": "Betrayal at House on the Hill",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 0.07,
+  "estado": "sin"
+ },
+ {
+  "id": 34,
+  "juego": "Bienvenido a la Mazmorra",
+  "tiendaId": 10456,
+  "producto": "BIENVENIDO A LA MAZMORRA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 35,
+  "juego": "Big Boss / Bohnanza",
+  "tiendaId": 10992,
+  "producto": "ISTAMBUL BIG BOX",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 36,
+  "juego": "Bitcoin",
+  "tiendaId": 10457,
+  "producto": "BITCOIN HACKERS",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 37,
+  "juego": "Bitoku",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 38,
+  "juego": "Black Mirror",
+  "tiendaId": 10458,
+  "producto": "BLACK MIRROR NOSEDIVE",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 39,
+  "juego": "Black Stories",
+  "tiendaId": 10463,
+  "producto": "BLACK STORIES EDICION SUPERHEROES",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 40,
+  "juego": "Black Stories 3",
+  "tiendaId": 10459,
+  "producto": "BLACK STORIES 3",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 41,
+  "juego": "Black Stories: Crímenes Verdaderos",
+  "tiendaId": 10463,
+  "producto": "BLACK STORIES EDICION SUPERHEROES",
+  "nota": 0.35,
+  "estado": "sin"
+ },
+ {
+  "id": 42,
+  "juego": "Black Stories: Muerte en Hollywood",
+  "tiendaId": 10463,
+  "producto": "BLACK STORIES EDICION SUPERHEROES",
+  "nota": 0.28,
+  "estado": "sin"
+ },
+ {
+  "id": 43,
+  "juego": "Black Stories: School Stories",
+  "tiendaId": 11353,
+  "producto": "SCHOOL STORIES",
+  "nota": 0.57,
+  "estado": "sin"
+ },
+ {
+  "id": 44,
+  "juego": "Black Stories: Superhéroes",
+  "tiendaId": 10463,
+  "producto": "BLACK STORIES EDICION SUPERHEROES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 45,
+  "juego": "Blind Business",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 46,
+  "juego": "Bloom Town",
+  "tiendaId": 11541,
+  "producto": "TOWN 77",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 47,
+  "juego": "Boogeyman",
+  "tiendaId": 10465,
+  "producto": "BOOGEYMAN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 48,
+  "juego": "Brain Chess",
+  "tiendaId": 10587,
+  "producto": "COLOR BRAIN DISNEY",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 49,
+  "juego": "Bucket of Doom",
+  "tiendaId": 12409,
+  "producto": "BUCKET OF DOOM",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 50,
+  "juego": "Cabrito",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 51,
+  "juego": "Caída Libre",
+  "tiendaId": 11225,
+  "producto": "PANDEMIC CAIDA DE ROMA",
+  "nota": 0.22,
+  "estado": "sin"
+ },
+ {
+  "id": 52,
+  "juego": "Calico",
+  "tiendaId": 10505,
+  "producto": "CALICO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 53,
+  "juego": "Camel Up",
+  "tiendaId": 10507,
+  "producto": "CAMEL UP JUEGO CARTAS",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 54,
+  "juego": "Campy Creatures",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 55,
+  "juego": "Candy Humanity: Family",
+  "tiendaId": 11004,
+  "producto": "KATAMINO FAMILY",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 56,
+  "juego": "Candy vs Gravity",
+  "tiendaId": 10512,
+  "producto": "CARDS VS GRAVITY",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 57,
+  "juego": "Carcassonne",
+  "tiendaId": 10510,
+  "producto": "CARCASSONNE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 58,
+  "juego": "Carpe Diem",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 59,
+  "juego": "Carrera de Pingüinos",
+  "tiendaId": 10514,
+  "producto": "CARRERA DE PINGUINOS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 60,
+  "juego": "Catan",
+  "tiendaId": 10529,
+  "producto": "CATAN JUEGO DE CARTAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 61,
+  "juego": "Catan Ampliación 5 a 6",
+  "tiendaId": 10563,
+  "producto": "CATAN EXPANSION 5-6 PERSONAS NAVEGANTES",
+  "nota": 0.37,
+  "estado": "sin"
+ },
+ {
+  "id": 62,
+  "juego": "Catan El Duelo",
+  "tiendaId": 10520,
+  "producto": "CATAN EL DUELO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 63,
+  "juego": "Catan El Despertar de la Humanidad",
+  "tiendaId": 10524,
+  "producto": "CATAN EL DESPERTAR DE LA HUMANIDAD",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 64,
+  "juego": "Catan El Juego",
+  "tiendaId": 10529,
+  "producto": "CATAN JUEGO DE CARTAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 65,
+  "juego": "Catan Energías",
+  "tiendaId": 10521,
+  "producto": "CATAN ENERGIAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 66,
+  "juego": "Catan Extensión 5 a 6",
+  "tiendaId": 10563,
+  "producto": "CATAN EXPANSION 5-6 PERSONAS NAVEGANTES",
+  "nota": 0.37,
+  "estado": "sin"
+ },
+ {
+  "id": 67,
+  "juego": "Catan Game of Thrones",
+  "tiendaId": 12441,
+  "producto": "RISK GAME OF THRONES",
+  "nota": 0.55,
+  "estado": "sin"
+ },
+ {
+  "id": 68,
+  "juego": "Catan Juego de Cartas",
+  "tiendaId": 10529,
+  "producto": "CATAN JUEGO DE CARTAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 69,
+  "juego": "Catan Junior",
+  "tiendaId": 10530,
+  "producto": "CATAN JUNIOR",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 70,
+  "juego": "Catan Piratas y Exploradores",
+  "tiendaId": 13338,
+  "producto": "CATAN EXPANSIÓN PIRATAS Y EXPLORADORES",
+  "nota": 0.94,
+  "estado": "probable"
+ },
+ {
+  "id": 71,
+  "juego": "Catan Viajeros de las Estrellas: El Duelo",
+  "tiendaId": 10565,
+  "producto": "CATAN VIAJEROS DE LAS ESTRELLAS EL DUELO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 72,
+  "juego": "Cazabombas",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 73,
+  "juego": "Cerveza y Pan",
+  "tiendaId": 10569,
+  "producto": "CERVEZA Y PAN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 74,
+  "juego": "Chao Pescao!",
+  "tiendaId": 10571,
+  "producto": "CHAO PESCAO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 75,
+  "juego": "Chúpate Esa",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 76,
+  "juego": "Citadels",
+  "tiendaId": 12411,
+  "producto": "CITADELS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 77,
+  "juego": "Cities",
+  "tiendaId": 10575,
+  "producto": "CITIES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 78,
+  "juego": "Clank! Catacumbas",
+  "tiendaId": 10578,
+  "producto": "CLANK CATACUMBAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 79,
+  "juego": "Clank! In! Space!",
+  "tiendaId": 11549,
+  "producto": "TZOLK’IN",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 80,
+  "juego": "Clue / Cluedo",
+  "tiendaId": 10580,
+  "producto": "CLUE",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 81,
+  "juego": "Cluedo Suspect",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 82,
+  "juego": "Cocos Locos",
+  "tiendaId": 10582,
+  "producto": "COCOS LOCOS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 83,
+  "juego": "Codenames Pictures",
+  "tiendaId": 13257,
+  "producto": "Codenames Pictures",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 84,
+  "juego": "Coffee Rush",
+  "tiendaId": 10584,
+  "producto": "COFFEE RUSH",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 85,
+  "juego": "Color Brain",
+  "tiendaId": 10587,
+  "producto": "COLOR BRAIN DISNEY",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 86,
+  "juego": "Colt Express",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 87,
+  "juego": "Con Eso No Se Jode",
+  "tiendaId": 11359,
+  "producto": "SE VENDE",
+  "nota": 0.09,
+  "estado": "sin"
+ },
+ {
+  "id": 88,
+  "juego": "Concept",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 89,
+  "juego": "Coop X",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 90,
+  "juego": "Corran",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 91,
+  "juego": "Corruptia",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 92,
+  "juego": "Coyote",
+  "tiendaId": 10629,
+  "producto": "COYOTE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 93,
+  "juego": "Cranium",
+  "tiendaId": 10630,
+  "producto": "CRANIUM",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 94,
+  "juego": "Criaturas de las Sombras",
+  "tiendaId": 10632,
+  "producto": "CRIATURAS DE LAS SOMBRAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 95,
+  "juego": "Cubitos",
+  "tiendaId": 10636,
+  "producto": "CUBITOS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 96,
+  "juego": "Código Secreto",
+  "tiendaId": 13322,
+  "producto": "CÓDIGO SECRETO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 97,
+  "juego": "Danger Danger",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 98,
+  "juego": "Dany",
+  "tiendaId": 10639,
+  "producto": "DANY",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 99,
+  "juego": "Deep Sea Adventure",
+  "tiendaId": 10640,
+  "producto": "DEEP SEA ADVENTURE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 100,
+  "juego": "Deluxe Pit",
+  "tiendaId": 11247,
+  "producto": "PLANETA DESCONOCIDO DELUXE",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 101,
+  "juego": "Describir de Mierda",
+  "tiendaId": 11286,
+  "producto": "PREGUNTAS DE MIERDA",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 102,
+  "juego": "Descubre Quién Robó el Gallinero",
+  "tiendaId": 10642,
+  "producto": "DESCUBRE QUIEN ROBO EN EL GALLINERO",
+  "nota": 0.95,
+  "estado": "seguro"
+ },
+ {
+  "id": 103,
+  "juego": "Despiertan",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 104,
+  "juego": "Detective",
+  "tiendaId": 10646,
+  "producto": "DETECTIVE CIUDAD DE ANGELES",
+  "nota": 0.77,
+  "estado": "probable"
+ },
+ {
+  "id": 105,
+  "juego": "Detectives Paranormales",
+  "tiendaId": 10648,
+  "producto": "DETECTIVES PARANORMALES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 106,
+  "juego": "Días de Radio",
+  "tiendaId": 10649,
+  "producto": "DIAS DE RADIO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 107,
+  "juego": "Difference",
+  "tiendaId": 10651,
+  "producto": "DIFFERENCE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 108,
+  "juego": "Divinity Derby",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 109,
+  "juego": "Dixit",
+  "tiendaId": 10687,
+  "producto": "DIXIT",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 110,
+  "juego": "Dixit Disney",
+  "tiendaId": 10687,
+  "producto": "DIXIT",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 111,
+  "juego": "Dixit Odyssey",
+  "tiendaId": 10687,
+  "producto": "DIXIT",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 112,
+  "juego": "Do or Drink",
+  "tiendaId": 10693,
+  "producto": "DO OR DRINK",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 113,
+  "juego": "Dominó",
+  "tiendaId": 10696,
+  "producto": "DOMINO JUNIOR",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 114,
+  "juego": "Dominion",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 115,
+  "juego": "Dominio de los Elementos",
+  "tiendaId": 10747,
+  "producto": "EL DOMINIO DE LOS ELEMENTOS",
+  "nota": 0.94,
+  "estado": "probable"
+ },
+ {
+  "id": 116,
+  "juego": "Don't Get Got!",
+  "tiendaId": 10697,
+  "producto": "DONT GET GOT",
+  "nota": 0.35,
+  "estado": "sin"
+ },
+ {
+  "id": 117,
+  "juego": "Dr. Microbe",
+  "tiendaId": 10701,
+  "producto": "DR MICROBE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 118,
+  "juego": "Dragon Class",
+  "tiendaId": 10704,
+  "producto": "DRAGON MASTER",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 119,
+  "juego": "Dragon Keepers",
+  "tiendaId": 10703,
+  "producto": "DRAGON KEEPERS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 120,
+  "juego": "Dragon Master",
+  "tiendaId": 10704,
+  "producto": "DRAGON MASTER",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 121,
+  "juego": "Drinkopoly",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 122,
+  "juego": "Duelo por Caza",
+  "tiendaId": 13266,
+  "producto": "Duelo por Cardia",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 123,
+  "juego": "Dune",
+  "tiendaId": 12413,
+  "producto": "DUNE HOUSE OF SECRETS",
+  "nota": 0.77,
+  "estado": "probable"
+ },
+ {
+  "id": 124,
+  "juego": "Dungeon Fighter",
+  "tiendaId": 10708,
+  "producto": "DUNGEON FIGHTER SEGUNDA EDICION",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 125,
+  "juego": "Dungeon Raiders",
+  "tiendaId": 10744,
+  "producto": "DUNGEON RAIDERS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 126,
+  "juego": "El Ahorcado",
+  "tiendaId": 13247,
+  "producto": "El Huesped",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 127,
+  "juego": "El Abejorro Tramposo",
+  "tiendaId": 10745,
+  "producto": "EL ABEJORRO TRAMPOSO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 128,
+  "juego": "El Dorado",
+  "tiendaId": 10749,
+  "producto": "EL DORADO (INGLES)",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 129,
+  "juego": "El Embustero",
+  "tiendaId": 13247,
+  "producto": "El Huesped",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 130,
+  "juego": "El Huésped",
+  "tiendaId": 13247,
+  "producto": "El Huesped",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 131,
+  "juego": "El Infiltrado",
+  "tiendaId": 10751,
+  "producto": "EL INFILTRADO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 132,
+  "juego": "El Laberinto Mágico",
+  "tiendaId": 10753,
+  "producto": "EL LABERINTO MAGICO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 133,
+  "juego": "El Resplandor",
+  "tiendaId": 13247,
+  "producto": "El Huesped",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 134,
+  "juego": "El Rey de los Dados",
+  "tiendaId": 10747,
+  "producto": "EL DOMINIO DE LOS ELEMENTOS",
+  "nota": 0.4,
+  "estado": "sin"
+ },
+ {
+  "id": 135,
+  "juego": "El Señor de los Anillos: Batalla por la Tierra Media",
+  "tiendaId": 10758,
+  "producto": "EL SE?OR DE LOS ANILLOS LA BATALLA POR LA TIERRA MEDIA JUEGO CARTAS",
+  "nota": 0.64,
+  "estado": "sin"
+ },
+ {
+  "id": 136,
+  "juego": "El Tonto del Pueblo",
+  "tiendaId": 10761,
+  "producto": "EL TONTO DEL PUEBLO SALE DE FIESTA",
+  "nota": 0.87,
+  "estado": "probable"
+ },
+ {
+  "id": 137,
+  "juego": "El Tonto del Pueblo: Pásalo con tus Amigos",
+  "tiendaId": 10759,
+  "producto": "EL TONTO DEL PUEBLO EL JUEGO PARA REIRTE DE TUS AMIGOS",
+  "nota": 0.52,
+  "estado": "sin"
+ },
+ {
+  "id": 138,
+  "juego": "El Tonto del Pueblo: Repite la Acción",
+  "tiendaId": 10760,
+  "producto": "EL TONTO DEL PUEBLO REPITE LA ESO",
+  "nota": 0.66,
+  "estado": "sin"
+ },
+ {
+  "id": 139,
+  "juego": "El Tonto del Pueblo: Sale de Fiesta",
+  "tiendaId": 10761,
+  "producto": "EL TONTO DEL PUEBLO SALE DE FIESTA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 140,
+  "juego": "El Vende",
+  "tiendaId": 13247,
+  "producto": "El Huesped",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 141,
+  "juego": "Eldritch Horror",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 142,
+  "juego": "Ensemble",
+  "tiendaId": 10763,
+  "producto": "ENSEMBLE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 143,
+  "juego": "Escalation Earth",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 144,
+  "juego": "ESPN Trivia Night",
+  "tiendaId": 11188,
+  "producto": "ONE NIGHT WEREWOLF",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 145,
+  "juego": "Exit Kids",
+  "tiendaId": 11587,
+  "producto": "UNSTABLE UNICORNS KIDS",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 146,
+  "juego": "Exploding Kittens",
+  "tiendaId": 10818,
+  "producto": "EXPLODING KITTENS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 147,
+  "juego": "Exploding Kittens Party Pack",
+  "tiendaId": 10818,
+  "producto": "EXPLODING KITTENS",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 148,
+  "juego": "Exploding Kittens Recipes for Disaster",
+  "tiendaId": 10820,
+  "producto": "EXPLODING KITTENS RECIPES FOR DESASTER",
+  "nota": 0.6,
+  "estado": "sin"
+ },
+ {
+  "id": 149,
+  "juego": "Exploding Kittens: Good vs Evil",
+  "tiendaId": 10819,
+  "producto": "EXPLODING KITTENS GOOD VS EVIL",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 150,
+  "juego": "Fairy Tale Inn",
+  "tiendaId": 10822,
+  "producto": "FAIRY TALES INN",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 151,
+  "juego": "Fantasma Blitz",
+  "tiendaId": 10823,
+  "producto": "FANTASMA BLITZ",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 152,
+  "juego": "Fantasma Blitz: Feliz Cumpleaños",
+  "tiendaId": 13409,
+  "producto": "FANTASMA BLITZ EDICIÓN CUMPLEAÑOS",
+  "nota": 0.63,
+  "estado": "sin"
+ },
+ {
+  "id": 153,
+  "juego": "Faraway",
+  "tiendaId": 10825,
+  "producto": "FARAWAY",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 154,
+  "juego": "Featherweight Fiesta",
+  "tiendaId": 11054,
+  "producto": "LA FIESTA",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 155,
+  "juego": "Feed the Kraken",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 156,
+  "juego": "Five Tribes",
+  "tiendaId": 13374,
+  "producto": "FIVE TRIBES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 157,
+  "juego": "Fog of Love",
+  "tiendaId": 10865,
+  "producto": "FOG OF LOVE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 158,
+  "juego": "For the Girls",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 159,
+  "juego": "Forero vs Dinosaurio",
+  "tiendaId": 11481,
+  "producto": "TACO VS BURRITO",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 160,
+  "juego": "Funkoverse",
+  "tiendaId": 10883,
+  "producto": "FUNKOPOP FUNKOVERSE BATMAN",
+  "nota": 0.8,
+  "estado": "probable"
+ },
+ {
+  "id": 161,
+  "juego": "Fútbol: Brainbox",
+  "tiendaId": 10468,
+  "producto": "BRAIN BOX FUTBOL",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 162,
+  "juego": "Game of Thrones: Hand of the King",
+  "tiendaId": 10884,
+  "producto": "GAME OF THRONES HAND OF THE KING",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 163,
+  "juego": "Ganges",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 164,
+  "juego": "Genial",
+  "tiendaId": 10889,
+  "producto": "GENIAL",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 165,
+  "juego": "Get Loud",
+  "tiendaId": 10890,
+  "producto": "GET LOUD",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 166,
+  "juego": "Get on Board",
+  "tiendaId": 10890,
+  "producto": "GET LOUD",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 167,
+  "juego": "Go Cuckoo",
+  "tiendaId": 10891,
+  "producto": "GO CUCKOO!",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 168,
+  "juego": "Good Face",
+  "tiendaId": 10819,
+  "producto": "EXPLODING KITTENS GOOD VS EVIL",
+  "nota": 0.21,
+  "estado": "sin"
+ },
+ {
+  "id": 169,
+  "juego": "Guatafac",
+  "tiendaId": 10927,
+  "producto": "GUATAFAC UNOS VICIOS",
+  "nota": 0.8,
+  "estado": "probable"
+ },
+ {
+  "id": 170,
+  "juego": "Guatafac: Unos Niños",
+  "tiendaId": 10927,
+  "producto": "GUATAFAC UNOS VICIOS",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 171,
+  "juego": "Gwent",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 172,
+  "juego": "Halli Galli",
+  "tiendaId": 10931,
+  "producto": "HALLI GALLI",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 173,
+  "juego": "Hand to Hand Wombat",
+  "tiendaId": 10935,
+  "producto": "HAND TO HAND WOMBAT",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 174,
+  "juego": "Hanabi",
+  "tiendaId": 10934,
+  "producto": "HANABI QUE ESPECTACULO",
+  "nota": 0.8,
+  "estado": "probable"
+ },
+ {
+  "id": 175,
+  "juego": "Happy Little Dinosaurs",
+  "tiendaId": 10937,
+  "producto": "HAPPY LITTLE DINOSAURS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 176,
+  "juego": "Happy Salmon",
+  "tiendaId": 10939,
+  "producto": "HAPPY PIGS",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 177,
+  "juego": "Harry Potter Brain Box",
+  "tiendaId": 10469,
+  "producto": "BRAIN BOX HARRY POTTER",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 178,
+  "juego": "Harry Potter Memo / Magic",
+  "tiendaId": 11425,
+  "producto": "STRIKE HARRY POTTER",
+  "nota": 0.35,
+  "estado": "sin"
+ },
+ {
+  "id": 179,
+  "juego": "Harry Potter Time's Up",
+  "tiendaId": 10943,
+  "producto": "HARRY POTTER TIMES UP",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 180,
+  "juego": "Hash 10",
+  "tiendaId": 11405,
+  "producto": "SMART 10",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 181,
+  "juego": "Heat",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 182,
+  "juego": "Heaven & Ale",
+  "tiendaId": 10944,
+  "producto": "HEAVEN&ALE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 183,
+  "juego": "Hellapagos",
+  "tiendaId": 10945,
+  "producto": "HELLAPAGOS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 184,
+  "juego": "Helsinki Revelations",
+  "tiendaId": 10692,
+  "producto": "DIXIT REVELATIONS",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 185,
+  "juego": "Here to Slay",
+  "tiendaId": 11645,
+  "producto": "WHALE TO POOK",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 186,
+  "juego": "Hero Realms",
+  "tiendaId": 11306,
+  "producto": "RHINO HERO",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 187,
+  "juego": "Heroes of Barcadia",
+  "tiendaId": 10404,
+  "producto": "ALICEMATIC HEROES",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 188,
+  "juego": "High Score",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 189,
+  "juego": "Hitster 100% Español",
+  "tiendaId": 10951,
+  "producto": "HITSTER",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 190,
+  "juego": "Hitster: Bingo",
+  "tiendaId": 10950,
+  "producto": "HITSTER BINGO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 191,
+  "juego": "Hitster: Grandes Éxitos",
+  "tiendaId": 10951,
+  "producto": "HITSTER",
+  "nota": 0.33,
+  "estado": "sin"
+ },
+ {
+  "id": 192,
+  "juego": "Hitster: Latino",
+  "tiendaId": 10951,
+  "producto": "HITSTER",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 193,
+  "juego": "Hitster: Lemazon",
+  "tiendaId": 10951,
+  "producto": "HITSTER",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 194,
+  "juego": "Hitster: Meme Party Game",
+  "tiendaId": 10951,
+  "producto": "HITSTER",
+  "nota": 0.27,
+  "estado": "sin"
+ },
+ {
+  "id": 195,
+  "juego": "Hitster: Summer Party",
+  "tiendaId": 10951,
+  "producto": "HITSTER",
+  "nota": 0.33,
+  "estado": "sin"
+ },
+ {
+  "id": 196,
+  "juego": "Hombres Lobo",
+  "tiendaId": 13344,
+  "producto": "HOMBRES LOBO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 197,
+  "juego": "Iceberg",
+  "tiendaId": 10986,
+  "producto": "ICEBERG",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 198,
+  "juego": "iGoat?",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 199,
+  "juego": "Incómodos Invitados",
+  "tiendaId": 10990,
+  "producto": "INCOMODOS INVITADOS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 200,
+  "juego": "Incómodos Invitados 2",
+  "tiendaId": 10990,
+  "producto": "INCOMODOS INVITADOS",
+  "nota": 0.57,
+  "estado": "sin"
+ },
+ {
+  "id": 201,
+  "juego": "Jaipur",
+  "tiendaId": 10994,
+  "producto": "JAIPUR",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 202,
+  "juego": "Jaws",
+  "tiendaId": 10995,
+  "producto": "JAWS MINI",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 203,
+  "juego": "Jenga",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 204,
+  "juego": "Jerusalém",
+  "tiendaId": 10996,
+  "producto": "JERUSALEM ANNO DOMINI",
+  "nota": 0.8,
+  "estado": "probable"
+ },
+ {
+  "id": 205,
+  "juego": "Joker Game",
+  "tiendaId": 11592,
+  "producto": "VIDEO GAME CHAMPION",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 206,
+  "juego": "Juego de Tronos",
+  "tiendaId": 13330,
+  "producto": "TAPESTRY UN JUEGO DE CIVILIZACIONES",
+  "nota": 0.39,
+  "estado": "sin"
+ },
+ {
+  "id": 207,
+  "juego": "Juego de Tronos: El Juego de Cartas",
+  "tiendaId": 10758,
+  "producto": "EL SE?OR DE LOS ANILLOS LA BATALLA POR LA TIERRA MEDIA JUEGO CARTAS",
+  "nota": 0.39,
+  "estado": "sin"
+ },
+ {
+  "id": 208,
+  "juego": "Juego de Tronos: El Juego de Risk",
+  "tiendaId": 13330,
+  "producto": "TAPESTRY UN JUEGO DE CIVILIZACIONES",
+  "nota": 0.27,
+  "estado": "sin"
+ },
+ {
+  "id": 209,
+  "juego": "Juego de Tronos: El Juego de Tablero",
+  "tiendaId": 13330,
+  "producto": "TAPESTRY UN JUEGO DE CIVILIZACIONES",
+  "nota": 0.27,
+  "estado": "sin"
+ },
+ {
+  "id": 210,
+  "juego": "Juicy Fruits",
+  "tiendaId": 10998,
+  "producto": "JUICY FRUITS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 211,
+  "juego": "Jugando a tus Amigos",
+  "tiendaId": 10759,
+  "producto": "EL TONTO DEL PUEBLO EL JUEGO PARA REIRTE DE TUS AMIGOS",
+  "nota": 0.22,
+  "estado": "sin"
+ },
+ {
+  "id": 212,
+  "juego": "Jungle Speed",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 213,
+  "juego": "Just One",
+  "tiendaId": 10999,
+  "producto": "JUST ONE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 214,
+  "juego": "Katamino Family",
+  "tiendaId": 11004,
+  "producto": "KATAMINO FAMILY",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 215,
+  "juego": "Katamino Tower / Katamino",
+  "tiendaId": 11006,
+  "producto": "KATAMINO TOWER",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 216,
+  "juego": "Keyflower",
+  "tiendaId": 11009,
+  "producto": "KEYFLOWER",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 217,
+  "juego": "King of Tokyo",
+  "tiendaId": 11043,
+  "producto": "KING OF TOKYO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 218,
+  "juego": "Knives Out",
+  "tiendaId": 11048,
+  "producto": "KNIVES OUT",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 219,
+  "juego": "La Búsqueda de la Felicidad",
+  "tiendaId": 11050,
+  "producto": "LA BUSQUEDA DE LA FELICIDAD",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 220,
+  "juego": "La Búsqueda del Planeta X",
+  "tiendaId": 11057,
+  "producto": "LA PARTIDA DEL SIGLO",
+  "nota": 0.23,
+  "estado": "sin"
+ },
+ {
+  "id": 221,
+  "juego": "La Escoba Encantada",
+  "tiendaId": 11053,
+  "producto": "LA ESCOBA ENCANTADA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 222,
+  "juego": "La Fiesta",
+  "tiendaId": 11054,
+  "producto": "LA FIESTA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 223,
+  "juego": "La Gran Misión",
+  "tiendaId": 11058,
+  "producto": "LA TRIPULACION",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 224,
+  "juego": "La Isla Prohibida",
+  "tiendaId": 10809,
+  "producto": "EXIT LA ISLA OLVIDADA",
+  "nota": 0.42,
+  "estado": "sin"
+ },
+ {
+  "id": 225,
+  "juego": "La Morada Maldita",
+  "tiendaId": 11056,
+  "producto": "LA MORADA MALDITA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 226,
+  "juego": "La Partida del Siglo",
+  "tiendaId": 11057,
+  "producto": "LA PARTIDA DEL SIGLO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 227,
+  "juego": "La Resistencia",
+  "tiendaId": 11058,
+  "producto": "LA TRIPULACION",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 228,
+  "juego": "La Reventa",
+  "tiendaId": 11058,
+  "producto": "LA TRIPULACION",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 229,
+  "juego": "Las Aventuras de Robin Hood",
+  "tiendaId": 11311,
+  "producto": "LAS AVENTURAS DE ROBIN HOOD",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 230,
+  "juego": "Las Tabernas de Valfonda",
+  "tiendaId": 10632,
+  "producto": "CRIATURAS DE LAS SOMBRAS",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 231,
+  "juego": "Las Vegas Royale",
+  "tiendaId": 11061,
+  "producto": "LAS VEGAS ROYALE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 232,
+  "juego": "Last 8 Furious",
+  "tiendaId": 11062,
+  "producto": "LAST FRIDAY",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 233,
+  "juego": "Last Team",
+  "tiendaId": 11404,
+  "producto": "SKY TEAM",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 234,
+  "juego": "Licho",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 235,
+  "juego": "Líneas Maestras",
+  "tiendaId": 11064,
+  "producto": "LINEAS MAESTRAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 236,
+  "juego": "Little Secret",
+  "tiendaId": 11065,
+  "producto": "LITTLE SECRETS",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 237,
+  "juego": "Llamagedón",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 238,
+  "juego": "Loot",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 239,
+  "juego": "Lora Capital",
+  "tiendaId": 11070,
+  "producto": "LUNA CAPITAL",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 240,
+  "juego": "Lords of Vegas",
+  "tiendaId": 12409,
+  "producto": "BUCKET OF DOOM",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 241,
+  "juego": "Lost Cities",
+  "tiendaId": 11068,
+  "producto": "LOST CITIES ROLL&WRITE",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 242,
+  "juego": "Lotería del Bebé",
+  "tiendaId": 11130,
+  "producto": "MINEROS DEL IMPERIO",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 243,
+  "juego": "Love Letter",
+  "tiendaId": 11069,
+  "producto": "LOVE LETTER",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 244,
+  "juego": "Lulas",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 245,
+  "juego": "Magic Maze",
+  "tiendaId": 11072,
+  "producto": "MAGIC MAZE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 246,
+  "juego": "Mal Trago",
+  "tiendaId": 11104,
+  "producto": "MAL TRAGO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 247,
+  "juego": "Mandala Stones",
+  "tiendaId": 11107,
+  "producto": "MANDALA STONES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 248,
+  "juego": "Maniacal",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 249,
+  "juego": "Marabunta",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 250,
+  "juego": "Marvel Zombies",
+  "tiendaId": 11114,
+  "producto": "MARVEL ZOMBIES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 251,
+  "juego": "Mascarade",
+  "tiendaId": 11115,
+  "producto": "MASCARADE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 252,
+  "juego": "Melasopla",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 253,
+  "juego": "Meme The Game",
+  "tiendaId": 12432,
+  "producto": "MEME THE GAME DISNEY EDITION",
+  "nota": 0.88,
+  "estado": "probable"
+ },
+ {
+  "id": 254,
+  "juego": "Meme The Game: Disney",
+  "tiendaId": 12432,
+  "producto": "MEME THE GAME DISNEY EDITION",
+  "nota": 0.94,
+  "estado": "probable"
+ },
+ {
+  "id": 255,
+  "juego": "Mente Vacuna",
+  "tiendaId": 11121,
+  "producto": "MENTE VACUNA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 256,
+  "juego": "Mexican Train",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 257,
+  "juego": "Mi Primer Bananagrams",
+  "tiendaId": 11123,
+  "producto": "MI TIENDA",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 258,
+  "juego": "Mickey and the Beanstalk",
+  "tiendaId": 10685,
+  "producto": "DISNEY MICKEY AND THE BEANSTALK",
+  "nota": 0.94,
+  "estado": "probable"
+ },
+ {
+  "id": 259,
+  "juego": "MicroMacro: Crime City",
+  "tiendaId": 13367,
+  "producto": "MICRO MACRO CRIME CITY",
+  "nota": 0.42,
+  "estado": "sin"
+ },
+ {
+  "id": 260,
+  "juego": "Mindbug",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 261,
+  "juego": "Mind Gamers",
+  "tiendaId": 11523,
+  "producto": "THE MIND",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 262,
+  "juego": "Minecraft: Builders & Biomes",
+  "tiendaId": 11129,
+  "producto": "MINECRAFT CARD GAME",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 263,
+  "juego": "Mister Pedo",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 264,
+  "juego": "Monopoly",
+  "tiendaId": 11165,
+  "producto": "MONOPOLY FORTNITE",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 265,
+  "juego": "Monopoly Builder",
+  "tiendaId": 13400,
+  "producto": "KINGDOM BUILDER",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 266,
+  "juego": "Monopoly Pokémon",
+  "tiendaId": 11165,
+  "producto": "MONOPOLY FORTNITE",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 267,
+  "juego": "Monopoly Secret Vault",
+  "tiendaId": 11165,
+  "producto": "MONOPOLY FORTNITE",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 268,
+  "juego": "Monkey Palace",
+  "tiendaId": 11164,
+  "producto": "MONKEY PALACE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 269,
+  "juego": "Monster Madness",
+  "tiendaId": 10712,
+  "producto": "DUNGEON MAYHEM MONSTER MADNESS",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 270,
+  "juego": "Monstruo de Colores",
+  "tiendaId": 10755,
+  "producto": "EL MONSTRUO DE COLORES",
+  "nota": 0.92,
+  "estado": "probable"
+ },
+ {
+  "id": 271,
+  "juego": "Mr. Drink Games",
+  "tiendaId": 10693,
+  "producto": "DO OR DRINK",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 272,
+  "juego": "MTV Music",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 273,
+  "juego": "Muffin Time",
+  "tiendaId": 11490,
+  "producto": "THAT TIME YOU KILLED ME",
+  "nota": 0.21,
+  "estado": "sin"
+ },
+ {
+  "id": 274,
+  "juego": "Munchkin Cthulhu 1, 2, 3 y 4",
+  "tiendaId": 11172,
+  "producto": "MUNCHKIN CTHULU 4",
+  "nota": 0.2,
+  "estado": "sin"
+ },
+ {
+  "id": 275,
+  "juego": "Mysterium",
+  "tiendaId": 11178,
+  "producto": "MYSTERIUM PARK",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 276,
+  "juego": "Mystery House",
+  "tiendaId": 10388,
+  "producto": "5 MINUTES MYSTERY",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 277,
+  "juego": "Naipe Español",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 278,
+  "juego": "Narcos",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 279,
+  "juego": "Ni Sí Ni No",
+  "tiendaId": 11182,
+  "producto": "NO GRACIAS",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 280,
+  "juego": "Nimalia",
+  "tiendaId": 11181,
+  "producto": "NIMALIA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 281,
+  "juego": "No Gracias",
+  "tiendaId": 11182,
+  "producto": "NO GRACIAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 282,
+  "juego": "Nobel Run",
+  "tiendaId": 11183,
+  "producto": "NOBEL RUN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 283,
+  "juego": "Nueva Era Mi Tierra",
+  "tiendaId": 11123,
+  "producto": "MI TIENDA",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 284,
+  "juego": "Obscurio",
+  "tiendaId": 11185,
+  "producto": "OBSCURIO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 285,
+  "juego": "Océanos",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 286,
+  "juego": "Odin",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 287,
+  "juego": "One Night Ultimate Werewolf",
+  "tiendaId": 11188,
+  "producto": "ONE NIGHT WEREWOLF",
+  "nota": 0.63,
+  "estado": "sin"
+ },
+ {
+  "id": 288,
+  "juego": "Optimus",
+  "tiendaId": 11189,
+  "producto": "OPTIMUS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 289,
+  "juego": "Ouch",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 290,
+  "juego": "Out of This World",
+  "tiendaId": 11048,
+  "producto": "KNIVES OUT",
+  "nota": 0.12,
+  "estado": "sin"
+ },
+ {
+  "id": 291,
+  "juego": "Taco, Gato, Cabra, Queso, Pizza",
+  "tiendaId": 11479,
+  "producto": "TACO GATO CABRA QUESO PIZZA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 292,
+  "juego": "Taco, Gato, Cabra, Queso, Pizza: Halloween",
+  "tiendaId": 11480,
+  "producto": "TACO GATO CABRA QUESO PIZZA HALLOWEEN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 293,
+  "juego": "Palabras Basura",
+  "tiendaId": 11191,
+  "producto": "PALABRAS BASURAS",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 294,
+  "juego": "Pan Am",
+  "tiendaId": 11223,
+  "producto": "PAN AM",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 295,
+  "juego": "Panic Lab",
+  "tiendaId": 11227,
+  "producto": "PANIC MANSION",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 296,
+  "juego": "Panic Mansión",
+  "tiendaId": 11227,
+  "producto": "PANIC MANSION",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 297,
+  "juego": "Para el Mamón",
+  "tiendaId": 10759,
+  "producto": "EL TONTO DEL PUEBLO EL JUEGO PARA REIRTE DE TUS AMIGOS",
+  "nota": 0.33,
+  "estado": "sin"
+ },
+ {
+  "id": 298,
+  "juego": "Parada Royale",
+  "tiendaId": 13334,
+  "producto": "PANDA ROYALE",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 299,
+  "juego": "Parén la Nave",
+  "tiendaId": 11229,
+  "producto": "PAREN LA NAVE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 300,
+  "juego": "París",
+  "tiendaId": 11230,
+  "producto": "PARIS EIFFEL",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 301,
+  "juego": "París: New Eden",
+  "tiendaId": 11230,
+  "producto": "PARIS EIFFEL",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 302,
+  "juego": "Patchwork",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 303,
+  "juego": "Peaky Blinders",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 304,
+  "juego": "Peek a Mouse",
+  "tiendaId": 11233,
+  "producto": "PEEK A MOUSE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 305,
+  "juego": "Pelusas",
+  "tiendaId": 11235,
+  "producto": "PELUSAS REVOLUTION",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 306,
+  "juego": "Pick a Cerdo",
+  "tiendaId": 11240,
+  "producto": "PICK A CERDO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 307,
+  "juego": "Pick a Perro",
+  "tiendaId": 11241,
+  "producto": "PICK A PERRO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 308,
+  "juego": "Pictionary Air",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 309,
+  "juego": "Pictures",
+  "tiendaId": 11244,
+  "producto": "PICTURES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 310,
+  "juego": "Pimp",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 311,
+  "juego": "Pistas Cruzadas",
+  "tiendaId": 11246,
+  "producto": "PISTAS CRUZADAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 312,
+  "juego": "Planet 3",
+  "tiendaId": 12453,
+  "producto": "3 RING CIRCUS",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 313,
+  "juego": "Play Hit",
+  "tiendaId": 11248,
+  "producto": "PLAY HIT",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 314,
+  "juego": "Pócimas y Brebajes",
+  "tiendaId": 11249,
+  "producto": "POCIMAS Y BREBAJES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 315,
+  "juego": "Polilla Tramposa",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 316,
+  "juego": "Pop Under Pressure",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 317,
+  "juego": "Póquer de Bichos",
+  "tiendaId": 11252,
+  "producto": "POQUER DE BICHOS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 318,
+  "juego": "Por Northwood",
+  "tiendaId": 13266,
+  "producto": "Duelo por Cardia",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 319,
+  "juego": "Potion Explosion",
+  "tiendaId": 11285,
+  "producto": "POTION EXPLOSION",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 320,
+  "juego": "Pradera",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 321,
+  "juego": "Preguntas de Mierda",
+  "tiendaId": 11286,
+  "producto": "PREGUNTAS DE MIERDA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 322,
+  "juego": "Prima Ballerina",
+  "tiendaId": 12437,
+  "producto": "PRIMA BALLERINA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 323,
+  "juego": "Prime Climb",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 324,
+  "juego": "Príncipe",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 325,
+  "juego": "Pylos",
+  "tiendaId": 11289,
+  "producto": "PYLOS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 326,
+  "juego": "Qawale",
+  "tiendaId": 11290,
+  "producto": "QAWALE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 327,
+  "juego": "¿Que me estás Container?",
+  "tiendaId": 10934,
+  "producto": "HANABI QUE ESPECTACULO",
+  "nota": 0.07,
+  "estado": "sin"
+ },
+ {
+  "id": 328,
+  "juego": "Que Llevo en la Maleta",
+  "tiendaId": 11294,
+  "producto": "QUE LLEVO EN LA MALETA EXTREMO",
+  "nota": 0.95,
+  "estado": "seguro"
+ },
+ {
+  "id": 329,
+  "juego": "Que No Se Te Caiga el Jabón",
+  "tiendaId": 10756,
+  "producto": "EL SE?OR DE LOS ANILLO EDICION ANIVERSARIO",
+  "nota": 0.09,
+  "estado": "sin"
+ },
+ {
+  "id": 330,
+  "juego": "Quick Stop",
+  "tiendaId": 10508,
+  "producto": "CAN’T STOP",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 331,
+  "juego": "Quixo",
+  "tiendaId": 11296,
+  "producto": "QUIXO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 332,
+  "juego": "Quoridor",
+  "tiendaId": 11297,
+  "producto": "QUORIDOR PACMAC",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 333,
+  "juego": "¿Quién Te Conoce Mejor?",
+  "tiendaId": 11295,
+  "producto": "QUIEN TE CONOCE MEJOR",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 334,
+  "juego": "Ra",
+  "tiendaId": 11298,
+  "producto": "RA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 335,
+  "juego": "Rallyman",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 336,
+  "juego": "Raza Manzana",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 337,
+  "juego": "Red Cathedral",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 338,
+  "juego": "Remix Manuel",
+  "tiendaId": 11113,
+  "producto": "MARVEL REMIX",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 339,
+  "juego": "Remolacha",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 340,
+  "juego": "República Bananera: Al Límite del Humor",
+  "tiendaId": 11301,
+  "producto": "REPUBLICA BANANERA AL LIMITE DEL HUMOR",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 341,
+  "juego": "República Bananera: Vacuna Española",
+  "tiendaId": 11302,
+  "producto": "REPUBLICA BANANERA LA VACUNA ESPA?OLA",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 342,
+  "juego": "Rescate",
+  "tiendaId": 11303,
+  "producto": "RESCATE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 343,
+  "juego": "Rhino Hero",
+  "tiendaId": 11306,
+  "producto": "RHINO HERO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 344,
+  "juego": "Rhino Hero: Missing Match",
+  "tiendaId": 11307,
+  "producto": "RHINO HERO MISSING MATCH",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 345,
+  "juego": "Rhino Hero: Super Battle",
+  "tiendaId": 11308,
+  "producto": "RHINO HERO SUPER BATTLE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 346,
+  "juego": "Risk",
+  "tiendaId": 12441,
+  "producto": "RISK GAME OF THRONES",
+  "nota": 0.77,
+  "estado": "probable"
+ },
+ {
+  "id": 347,
+  "juego": "Ritmo y Bola",
+  "tiendaId": 11309,
+  "producto": "RITMO Y BOLA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 348,
+  "juego": "River Dragons",
+  "tiendaId": 11310,
+  "producto": "RIVER DRAGONS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 349,
+  "juego": "Robinson Crusoe",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 350,
+  "juego": "Root",
+  "tiendaId": 12470,
+  "producto": "ROOT",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 351,
+  "juego": "Rummi Classic",
+  "tiendaId": 11344,
+  "producto": "RUMMI CLASSIC ROJO",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 352,
+  "juego": "Rush M.D.",
+  "tiendaId": 11346,
+  "producto": "RUSH MD",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 353,
+  "juego": "Saboteur",
+  "tiendaId": 11347,
+  "producto": "SABOTEUR",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 354,
+  "juego": "Sagrada",
+  "tiendaId": 11349,
+  "producto": "SAGRADA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 355,
+  "juego": "Salud",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 356,
+  "juego": "Scrabble",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 357,
+  "juego": "Scrawl",
+  "tiendaId": 11356,
+  "producto": "SCRAWL",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 358,
+  "juego": "Scream",
+  "tiendaId": 11357,
+  "producto": "SCREAM",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 359,
+  "juego": "Secret Hitler",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 360,
+  "juego": "Secret Night",
+  "tiendaId": 11188,
+  "producto": "ONE NIGHT WEREWOLF",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 361,
+  "juego": "Seinfeld",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 362,
+  "juego": "Sequence",
+  "tiendaId": 11362,
+  "producto": "SEQUENCE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 363,
+  "juego": "Set",
+  "tiendaId": 11363,
+  "producto": "SET",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 364,
+  "juego": "Sheriff de Nottingham",
+  "tiendaId": 11364,
+  "producto": "SHERIFF OF NOTTINGHAM",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 365,
+  "juego": "Shots Pong",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 366,
+  "juego": "Sky Team",
+  "tiendaId": 11404,
+  "producto": "SKY TEAM",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 367,
+  "juego": "Skyjo Action",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 368,
+  "juego": "Smart 10",
+  "tiendaId": 11405,
+  "producto": "SMART 10",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 369,
+  "juego": "Smash City",
+  "tiendaId": 10579,
+  "producto": "CLOUD CITY",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 370,
+  "juego": "So Clover",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 371,
+  "juego": "Sound Box",
+  "tiendaId": 10992,
+  "producto": "ISTAMBUL BIG BOX",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 372,
+  "juego": "Soviet Kitchen",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 373,
+  "juego": "Space Cadets",
+  "tiendaId": 11412,
+  "producto": "SPACE EXPLORERS",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 374,
+  "juego": "Spartacus",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 375,
+  "juego": "Speed Cups",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 376,
+  "juego": "Splendor",
+  "tiendaId": 11414,
+  "producto": "SPLENDOR",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 377,
+  "juego": "Splendor Duel",
+  "tiendaId": 11414,
+  "producto": "SPLENDOR",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 378,
+  "juego": "Spot It / Dobble",
+  "tiendaId": 11415,
+  "producto": "SPOT IT",
+  "nota": 0.57,
+  "estado": "sin"
+ },
+ {
+  "id": 379,
+  "juego": "Spot It: Frozen",
+  "tiendaId": 11416,
+  "producto": "SPOT IT FROZEN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 380,
+  "juego": "Spot It: Paw Patrol",
+  "tiendaId": 11415,
+  "producto": "SPOT IT",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 381,
+  "juego": "Spot It: Tortugas Ninja",
+  "tiendaId": 11419,
+  "producto": "SPOT IT TORTUGAS NINJA",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 382,
+  "juego": "Spotty",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 383,
+  "juego": "Star Wars",
+  "tiendaId": 11166,
+  "producto": "MONOPOLY STAR WARS",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 384,
+  "juego": "Starship",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 385,
+  "juego": "Stone Age",
+  "tiendaId": 10397,
+  "producto": "AGE OF INNOVATION",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 386,
+  "juego": "Stratego",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 387,
+  "juego": "Strike",
+  "tiendaId": 11425,
+  "producto": "STRIKE HARRY POTTER",
+  "nota": 0.8,
+  "estado": "probable"
+ },
+ {
+  "id": 388,
+  "juego": "Superclub",
+  "tiendaId": 11473,
+  "producto": "SUPERCLUB POWERHOUSE",
+  "nota": 0.85,
+  "estado": "probable"
+ },
+ {
+  "id": 389,
+  "juego": "Superclub Try Size Expansion",
+  "tiendaId": 11474,
+  "producto": "SUPERCLUB TOP SIX EXPANSION GREEN/PINK",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 390,
+  "juego": "Superclub: Expansión Oficial",
+  "tiendaId": 11474,
+  "producto": "SUPERCLUB TOP SIX EXPANSION GREEN/PINK",
+  "nota": 0.37,
+  "estado": "sin"
+ },
+ {
+  "id": 391,
+  "juego": "Superclub: Manager Kit",
+  "tiendaId": 11432,
+  "producto": "SUPERCLUB MANAGER KIT LIVERPOOL",
+  "nota": 0.92,
+  "estado": "probable"
+ },
+ {
+  "id": 392,
+  "juego": "Sushi Go Party",
+  "tiendaId": 12445,
+  "producto": "SUSHI GO PARTY",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 393,
+  "juego": "Syllabury",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 394,
+  "juego": "Tactic / Lacta",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 395,
+  "juego": "Talisman",
+  "tiendaId": 11485,
+  "producto": "TALISMAN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 396,
+  "juego": "Tapple After Dark",
+  "tiendaId": 10396,
+  "producto": "AFTER US",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 397,
+  "juego": "Ten",
+  "tiendaId": 11487,
+  "producto": "TEN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 398,
+  "juego": "The Castles of Burgundy",
+  "tiendaId": 11543,
+  "producto": "TRIBES OF THE WIND",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 399,
+  "juego": "The Chameleon",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 400,
+  "juego": "The Climbers",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 401,
+  "juego": "The Godfather",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 402,
+  "juego": "The Good, the Bad and the Munchkin",
+  "tiendaId": 10685,
+  "producto": "DISNEY MICKEY AND THE BEANSTALK",
+  "nota": 0.2,
+  "estado": "sin"
+ },
+ {
+  "id": 403,
+  "juego": "The Grimwood",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 404,
+  "juego": "The Mind",
+  "tiendaId": 11523,
+  "producto": "THE MIND",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 405,
+  "juego": "The Mind: Extreme",
+  "tiendaId": 11524,
+  "producto": "THE MIND EXTREME",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 406,
+  "juego": "The Mind: Soulmates",
+  "tiendaId": 11525,
+  "producto": "THE MIND SOULMATES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 407,
+  "juego": "The Sims",
+  "tiendaId": 11527,
+  "producto": "THE SIMS BOARD GAME",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 408,
+  "juego": "The Walking Dead",
+  "tiendaId": 11528,
+  "producto": "THE WALKING DEAD",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 409,
+  "juego": "Throw Throw Burrito",
+  "tiendaId": 11481,
+  "producto": "TACO VS BURRITO",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 410,
+  "juego": "Tic Tac Boom",
+  "tiendaId": 12461,
+  "producto": "TIC TIC BOOM",
+  "nota": 0.57,
+  "estado": "sin"
+ },
+ {
+  "id": 411,
+  "juego": "Ticket to Ride / ¡Aventureros al Tren!",
+  "tiendaId": 11535,
+  "producto": "TICKET TO RIDE",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 412,
+  "juego": "Ticket to Ride: America",
+  "tiendaId": 11535,
+  "producto": "TICKET TO RIDE",
+  "nota": 0.63,
+  "estado": "sin"
+ },
+ {
+  "id": 413,
+  "juego": "Ticket to Ride: Europa",
+  "tiendaId": 11535,
+  "producto": "TICKET TO RIDE",
+  "nota": 0.63,
+  "estado": "sin"
+ },
+ {
+  "id": 414,
+  "juego": "Ticket to Ride: First Journey",
+  "tiendaId": 11535,
+  "producto": "TICKET TO RIDE",
+  "nota": 0.52,
+  "estado": "sin"
+ },
+ {
+  "id": 415,
+  "juego": "Todo el Mundo Miente",
+  "tiendaId": 10647,
+  "producto": "DETECTIVE TODO EL MUNDO MIENTE BATMAN",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 416,
+  "juego": "Top Gun",
+  "tiendaId": 11538,
+  "producto": "TOP GUN",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 417,
+  "juego": "Torre del Beso",
+  "tiendaId": 11130,
+  "producto": "MINEROS DEL IMPERIO",
+  "nota": 0.13,
+  "estado": "sin"
+ },
+ {
+  "id": 418,
+  "juego": "Torres",
+  "tiendaId": 11539,
+  "producto": "TORRES",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 419,
+  "juego": "Total Domination",
+  "tiendaId": 11540,
+  "producto": "TOTAL DOMINATION",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 420,
+  "juego": "Trio",
+  "tiendaId": 11544,
+  "producto": "TRIO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 421,
+  "juego": "Triolet",
+  "tiendaId": 11545,
+  "producto": "TRIOLET",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 422,
+  "juego": "Triominos",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 423,
+  "juego": "Truth or Drink",
+  "tiendaId": 10693,
+  "producto": "DO OR DRINK",
+  "nota": 0.47,
+  "estado": "sin"
+ },
+ {
+  "id": 424,
+  "juego": "Tsuro",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 425,
+  "juego": "Turtle Splash",
+  "tiendaId": 11548,
+  "producto": "TURTLE SPLASH",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 426,
+  "juego": "Ubongo Classic",
+  "tiendaId": 11551,
+  "producto": "UBONGO CLASSIC",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 427,
+  "juego": "Un Día en las Carreras",
+  "tiendaId": 11552,
+  "producto": "UN DIA EN LAS CARRERAS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 428,
+  "juego": "Unicornio Destello",
+  "tiendaId": 11584,
+  "producto": "UNICORNIO DESTELLO",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 429,
+  "juego": "Uno Flex",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 430,
+  "juego": "Uno Gigante",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 431,
+  "juego": "Uno No Mercy",
+  "tiendaId": 11182,
+  "producto": "NO GRACIAS",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 432,
+  "juego": "Uno Stacko",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 433,
+  "juego": "Uno Teams",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 434,
+  "juego": "Uno Venezuela",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 435,
+  "juego": "Unstable Unicorns",
+  "tiendaId": 11586,
+  "producto": "UNSTABLE UNICORNS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 436,
+  "juego": "Ureck Sav",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 437,
+  "juego": "Velocipuzzle",
+  "tiendaId": 11589,
+  "producto": "VELOCIPUZZLE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 438,
+  "juego": "Verdad o Reto Cumpleaños",
+  "tiendaId": 13409,
+  "producto": "FANTASMA BLITZ EDICIÓN CUMPLEAÑOS",
+  "nota": 0.07,
+  "estado": "sin"
+ },
+ {
+  "id": 439,
+  "juego": "Villa Paletti",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 440,
+  "juego": "Villainous: Disney",
+  "tiendaId": 11600,
+  "producto": "VILLAINOUS PERFECTLY WRETCHED",
+  "nota": 0.25,
+  "estado": "sin"
+ },
+ {
+  "id": 441,
+  "juego": "Villainous: Marvel",
+  "tiendaId": 11114,
+  "producto": "MARVEL ZOMBIES",
+  "nota": 0.3,
+  "estado": "sin"
+ },
+ {
+  "id": 442,
+  "juego": "Virus!",
+  "tiendaId": 11602,
+  "producto": "VIRUS",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 443,
+  "juego": "Virus! 2",
+  "tiendaId": 11603,
+  "producto": "VIRUS 2",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 444,
+  "juego": "Virus! Halloween",
+  "tiendaId": 11602,
+  "producto": "VIRUS",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 445,
+  "juego": "Virus! Marvel",
+  "tiendaId": 11602,
+  "producto": "VIRUS",
+  "nota": 0.45,
+  "estado": "sin"
+ },
+ {
+  "id": 446,
+  "juego": "Walkie Talkie",
+  "tiendaId": 11608,
+  "producto": "WALKIE TALKIE",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 447,
+  "juego": "Welcome to the Moon",
+  "tiendaId": 11612,
+  "producto": "WELCOME TO THE MOON",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 448,
+  "juego": "What Do You Meme?",
+  "tiendaId": 11646,
+  "producto": "WHAT DO YOU MEME?",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 449,
+  "juego": "Whirly Derby",
+  "tiendaId": null,
+  "producto": null,
+  "nota": 0,
+  "estado": "sin"
+ },
+ {
+  "id": 450,
+  "juego": "Winner's Circle",
+  "tiendaId": 11649,
+  "producto": "WINNERS CIRCLE",
+  "nota": 0.18,
+  "estado": "sin"
+ },
+ {
+  "id": 451,
+  "juego": "Wizardry",
+  "tiendaId": 11651,
+  "producto": "WIZARDRY",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 452,
+  "juego": "Wordsmith",
+  "tiendaId": 11655,
+  "producto": "WORDSMITH",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 453,
+  "juego": "Yo Nunca Nunca",
+  "tiendaId": 11658,
+  "producto": "YO NUNCA REVOLUTION",
+  "nota": 0.9,
+  "estado": "probable"
+ },
+ {
+  "id": 454,
+  "juego": "Yogi",
+  "tiendaId": 11659,
+  "producto": "YOGI",
+  "nota": 1,
+  "estado": "seguro"
+ },
+ {
+  "id": 455,
+  "juego": "Zombie Kittens",
+  "tiendaId": 10821,
+  "producto": "EXPLODING KITTENS ZOMBIE KITTENS",
+  "nota": 0.9,
+  "estado": "probable"
+ }
+]
