@@ -1,11 +1,10 @@
 import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { Auth } from '../core/auth';
+import { Destino, NAVEGACION } from '../core/navegacion';
 import { Solicitudes } from '../core/solicitudes';
 
 @Component({
   selector: 'app-cabecera-admin',
-  imports: [RouterLink, RouterLinkActive],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <header class="cabecera">
@@ -16,17 +15,17 @@ import { Solicitudes } from '../core/solicitudes';
         </div>
         <nav>
           <span class="usuario">{{ auth.sesion()?.user?.email }}</span>
-          <a routerLink="/" class="enlace claro">Ver catálogo</a>
+          @if (nav.urlCatalogo; as catalogo) { <a [href]="catalogo" class="enlace claro">Ver catálogo</a> }
           <button class="enlace claro" type="button" (click)="salir()">Salir</button>
         </nav>
       </div>
       <nav class="ancho pestanas" aria-label="Secciones del panel">
-        <a routerLink="/admin" routerLinkActive="activa" [routerLinkActiveOptions]="{ exact: true }">Juegos</a>
-        <a routerLink="/admin/solicitudes" routerLinkActive="activa">
+        <a [href]="nav.href('juegos')" [class.activa]="nav.actual() === 'juegos'" (click)="ir($event, 'juegos')">Juegos</a>
+        <a [href]="nav.href('solicitudes')" [class.activa]="nav.actual() === 'solicitudes'" (click)="ir($event, 'solicitudes')">
           Solicitudes
           @if (solicitudes.totalPendientes(); as n) { <span class="cuenta">{{ n }}</span> }
         </a>
-        <a routerLink="/admin/torneos" routerLinkActive="activa">Torneos</a>
+        <a [href]="nav.href('torneos')" [class.activa]="nav.actual() === 'torneos'" (click)="ir($event, 'torneos')">Torneos</a>
       </nav>
     </header>
   `,
@@ -48,12 +47,19 @@ import { Solicitudes } from '../core/solicitudes';
 export class CabeceraAdmin {
   protected readonly auth = inject(Auth);
   protected readonly solicitudes = inject(Solicitudes);
-  private readonly router = inject(Router);
+  protected readonly nav = inject(NAVEGACION);
 
   readonly titulo = input.required<string>();
 
   protected async salir() {
     await this.auth.salir();
-    await this.router.navigateByUrl('/admin/entrar');
+    this.nav.ir('entrar');
+  }
+
+  /** Un clic normal cambia de pantalla sin recargar; con Ctrl/Cmd o botón del medio se deja abrir en otra pestaña. */
+  protected ir(e: MouseEvent, destino: Destino) {
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+    e.preventDefault();
+    this.nav.ir(destino);
   }
 }

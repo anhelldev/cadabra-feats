@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && ng build --configuration elements-publico",
+    "build": "ng build && ng build --configuration elements-publico && ng build --configuration elements-admin",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

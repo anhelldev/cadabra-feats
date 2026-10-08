@@ -222,7 +222,7 @@ página de WordPress, bloque "HTML personalizado":
   agrega CORS (`*`, es código público) y caché de 5 minutos a `/elements/*`, así cada deploy actualiza WordPress solo.
 - Página de prueba con CSS "hostil" de tema: `/elements-demo.html` (en local, sirve `dist/web/browser` con `npx serve`).
 - Con plugins de caché/optimización (WP Rocket, Autoptimize…) excluye ese script de la combinación y del retraso de JS.
-- El panel `/admin` sigue en Vercel (próxima fase: `<cadabra-admin>`).
+- El panel `/admin` sigue en Vercel y además existe como `<cadabra-admin>` (ver más abajo).
 - Estilos compartidos: `web/src/tema.css` (colores) y `web/src/base.css` (reset y clases comunes) los usan la app y el element;
   `web/src/elements.css` es la base del host dentro del shadow root.
 
@@ -253,3 +253,22 @@ mismo `main.js` que el catálogo).
 - **Lógica y pruebas:** el sorteo, las mesas, la llave y las tablas están en `web/src/app/core/torneos-logica.ts`
   (`node --experimental-strip-types --no-warnings web/src/app/core/torneos-logica.test.mjs`). `scripts/probar-torneos.mjs` prueba
   contra la base local las reglas de seguridad y el torneo completo.
+
+## Panel de admin como element (`<cadabra-admin>`)
+
+Para usar el panel dentro de una página **privada** de WordPress (con contraseña o solo para administradores), en un bloque HTML:
+
+    <script type="module" src="https://cadabra-juegos.vercel.app/elements/admin/main.js"></script>
+    <cadabra-admin></cadabra-admin>
+
+- Es un bundle aparte (`dist/web/browser/elements/admin/main.js`, ~140 KB comprimido) para no mandar código de admin a las páginas
+  públicas. Usa Shadow DOM, igual que el catálogo, y cambia de pantalla (Juegos / Solicitudes / Torneos / entrar) por dentro, sin
+  tocar la URL de WordPress. La navegación está abstraída en `web/src/app/core/navegacion.ts` (token `NAVEGACION`): la app de Vercel
+  usa el router (`navegacion-router.ts`) y el element una señal.
+- **Seguridad:** el bundle es público; lo que protege los datos es la base de datos (RLS) y el inicio de sesión de admin. La página
+  de WordPress debe ser privada para que ni se vea el formulario.
+- **Recuperar contraseña:** el correo vuelve a la misma página de WordPress, así que esa URL tiene que estar en Supabase →
+  Authentication → URL Configuration → Redirect URLs (por ejemplo `https://juegoscadabra.com/panel/`).
+- La sesión queda en el almacenamiento del navegador de `juegoscadabra.com`.
+- Página de prueba con CSS de tema hostil: `/elements-admin-demo.html`. Para probar contra la base **local**:
+  `ng build --configuration elements-admin-local` (y `elements-publico-local`), que salen en `web/dist/local/`.

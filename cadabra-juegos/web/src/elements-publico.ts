@@ -1,24 +1,14 @@
 import { provideBrowserGlobalErrorListeners } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { createApplication } from '@angular/platform-browser';
+import { cargarFuentes } from './elements-comun';
 import { Catalogo } from './app/catalogo/catalogo';
 import { TorneosPublico } from './app/torneos/torneos-publico';
 import { OPCIONES_SUPABASE } from './app/core/supabase';
 import { URL_BASE } from './app/core/recursos';
 import { TEMA_POR_DEFECTO } from './app/core/tema';
 
-// Los @font-face no funcionan dentro de un shadow root: las fuentes se cargan una vez en el documento.
-const FUENTES = [
-  'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap',
-  'https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap',
-];
-for (const href of FUENTES) {
-  if (document.querySelector(`link[href="${href}"]`)) continue;
-  const enlace = document.createElement('link');
-  enlace.rel = 'stylesheet';
-  enlace.href = href;
-  document.head.append(enlace);
-}
+cargarFuentes();
 
 const app = await createApplication({
   providers: [

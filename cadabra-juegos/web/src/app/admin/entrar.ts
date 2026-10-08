@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { Router } from '@angular/router';
 import { Auth } from '../core/auth';
+import { NAVEGACION } from '../core/navegacion';
 
 @Component({
   selector: 'app-entrar',
@@ -64,7 +64,7 @@ import { Auth } from '../core/auth';
 })
 export class Entrar {
   private readonly auth = inject(Auth);
-  private readonly router = inject(Router);
+  private readonly nav = inject(NAVEGACION);
   protected readonly error = signal('');
   protected readonly enviando = signal(false);
   protected readonly olvide = signal(false);
@@ -77,7 +77,7 @@ export class Entrar {
     this.enviando.set(true);
     try {
       await this.auth.entrar(String(datos.get('email')), String(datos.get('password')));
-      await this.router.navigateByUrl('/admin');
+      this.nav.ir('juegos');
     } catch (err) {
       this.error.set((err as Error).message);
     } finally {

@@ -1,11 +1,12 @@
 import { inject, Injectable, signal } from '@angular/core';
-import { CanActivateFn, Router } from '@angular/router';
 import type { Session } from '@supabase/supabase-js';
+import { URL_RECUPERACION } from './navegacion';
 import { Supabase } from './supabase';
 
 @Injectable({ providedIn: 'root' })
 export class Auth {
   private readonly db = inject(Supabase).client;
+  private readonly urlRecuperacion = inject(URL_RECUPERACION);
   readonly sesion = signal<Session | null>(null);
   readonly esAdmin = signal(false);
   private readonly listo: Promise<void>;
@@ -43,7 +44,7 @@ export class Auth {
 
   /** Envía el correo para elegir una contraseña nueva. Supabase responde igual exista o no la cuenta (no revela quién es admin). */
   async pedirRecuperacion(email: string): Promise<void> {
-    const { error } = await this.db.auth.resetPasswordForEmail(email.trim(), { redirectTo: `${location.origin}/admin/restablecer` });
+    const { error } = await this.db.auth.resetPasswordForEmail(email.trim(), { redirectTo: this.urlRecuperacion });
     if (error) throw new Error(traducir(error.message));
   }
 
@@ -67,9 +68,3 @@ function traducir(mensaje: string): string {
   if (m.includes('session missing') || m.includes('expired')) return 'El enlace venció o ya se usó. Pide uno nuevo desde la pantalla de entrada.';
   return mensaje;
 }
-
-export const soloAdmin: CanActivateFn = async () => {
-  const auth = inject(Auth);
-  const router = inject(Router);
-  return (await auth.comprobado()) || router.createUrlTree(['/admin/entrar']);
-};

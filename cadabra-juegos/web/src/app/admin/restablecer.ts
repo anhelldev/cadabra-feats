@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
 import { Auth } from '../core/auth';
+import { FRAGMENTO_INICIAL, NAVEGACION } from '../core/navegacion';
 
 const MINIMO = 8;
 
@@ -8,7 +8,6 @@ type Estado = 'comprobando' | 'listo' | 'invalido' | 'hecho';
 
 @Component({
   selector: 'app-restablecer',
-  imports: [RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <main>
@@ -22,11 +21,11 @@ type Estado = 'comprobando' | 'listo' | 'invalido' | 'hecho';
           }
           @case ('invalido') {
             <p class="error" role="alert">{{ motivo() }}</p>
-            <a class="boton" routerLink="/admin/entrar">Volver a la pantalla de entrada</a>
+            <button class="boton" type="button" (click)="nav.ir('entrar')">Volver a la pantalla de entrada</button>
           }
           @case ('hecho') {
             <p class="texto" role="status">Listo, tu contraseña quedó actualizada.</p>
-            <a class="boton" routerLink="/admin">Ir al panel</a>
+            <button class="boton" type="button" (click)="nav.ir('juegos')">Ir al panel</button>
           }
           @default {
             <form (submit)="guardar($event)">
@@ -58,14 +57,14 @@ type Estado = 'comprobando' | 'listo' | 'invalido' | 'hecho';
     .texto, .ayuda { margin: 0; color: var(--tenue); }
     .ayuda { font-size: 0.85rem; margin-top: -6px; }
     .error { padding: 0; }
-    a.boton { display: grid; place-items: center; text-decoration: none; }
+    .boton { display: grid; place-items: center; text-decoration: none; width: 100%; }
   `,
 })
 export class Restablecer {
   // Se lee antes de crear el servicio de Supabase: él borra el fragmento (#...) de la dirección al procesarlo.
-  private readonly fragmento = location.hash;
+  private readonly fragmento = inject(FRAGMENTO_INICIAL, { optional: true }) ?? location.hash;
   private readonly auth = inject(Auth);
-  private readonly router = inject(Router);
+  protected readonly nav = inject(NAVEGACION);
 
   protected readonly minimo = MINIMO;
   protected readonly estado = signal<Estado>('comprobando');
@@ -106,7 +105,7 @@ export class Restablecer {
     try {
       await this.auth.cambiarPassword(nueva);
       this.estado.set('hecho');
-      setTimeout(() => this.router.navigateByUrl('/admin'), 2500);
+      setTimeout(() => this.nav.ir('juegos'), 2500);
     } catch (err) {
       this.error.set((err as Error).message);
     } finally {

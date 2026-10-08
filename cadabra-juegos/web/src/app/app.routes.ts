@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { soloAdmin } from './core/auth';
+import { soloAdmin } from './core/guardas';
 
 export const routes: Routes = [
   { path: '', loadComponent: () => import('./catalogo/catalogo').then((m) => m.Catalogo), title: 'Juegos de Cadabra' },
