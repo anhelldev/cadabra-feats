@@ -9,4 +9,6 @@ export const environment = {
   solicitudes: { prefijo: '+58', privacidadUrl: '' },
   // Torneos: URL de la página donde vive <cadabra-torneos> (el link de inscripción le agrega ?t=<slug>). Vacío = la ruta /torneos de la app.
   torneos: { urlPublica: '' },
+  // Logo y sitio de Cadabra para el encabezado de la página de torneos.
+  marca: { logoUrl: 'https://juegoscadabra.com/wp-content/uploads/2025/10/Logo.png', sitioUrl: 'https://juegoscadabra.com/' },
 };

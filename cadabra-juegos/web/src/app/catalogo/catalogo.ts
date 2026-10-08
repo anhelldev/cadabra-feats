@@ -3,6 +3,7 @@ import { environment } from '../../environments/environment';
 import { Juegos, JuegoPublico, miniaturaDe, NIVELES, normalizar, textoDuracion } from '../core/juegos';
 import { TEMA_POR_DEFECTO } from '../core/tema';
 import { Dado } from '../shared/dado';
+import { Logo } from '../shared/logo';
 import { Pie } from '../shared/pie';
 import { Ficha } from './ficha';
 import { Ruleta } from './ruleta';
@@ -20,7 +21,7 @@ const ORDEN: Record<Orden, (a: JuegoPublico, b: JuegoPublico) => number> = {
 
 @Component({
   selector: 'app-catalogo',
-  imports: [Dado, Ficha, Pie, Ruleta],
+  imports: [Dado, Ficha, Logo, Pie, Ruleta],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.ShadowDom,
   templateUrl: './catalogo.html',

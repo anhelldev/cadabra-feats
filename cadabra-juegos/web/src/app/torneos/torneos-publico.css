@@ -1,5 +1,4 @@
 .tapete { background: var(--tapete); color: var(--tapete-tinta); padding: 28px 0 24px; }
-.marca { margin: 0 0 4px; font-family: var(--display); font-weight: 700; color: var(--tapete-tenue); }
 h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.05; }
 main.ancho { padding-top: 36px; padding-bottom: 12px; }
 h2 { margin: 0 0 10px; font-family: var(--display); font-size: 1.25rem; }

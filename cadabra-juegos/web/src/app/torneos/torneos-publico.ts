@@ -7,6 +7,7 @@ import { aplicarTemaPorDefecto, TEMA_POR_DEFECTO } from '../core/tema';
 import { ESTADOS, FilaPublica, FORMATOS, JuegoDeTorneo, Participante, Torneo, Torneos } from '../core/torneos';
 import { nombreRonda, podioLlave, podioPuntos, tablaPuntos } from '../core/torneos-logica';
 import { Ficha } from '../catalogo/ficha';
+import { Logo } from '../shared/logo';
 import { Pie } from '../shared/pie';
 
 const fechaLarga = new Intl.DateTimeFormat('es', { weekday: 'long', day: 'numeric', month: 'long', hour: 'numeric', minute: '2-digit' });
@@ -14,14 +15,14 @@ const fechaCorta = new Intl.DateTimeFormat('es', { day: 'numeric', month: 'short
 
 @Component({
   selector: 'app-torneos',
-  imports: [Pie, Ficha, NgTemplateOutlet],
+  imports: [Logo, Pie, Ficha, NgTemplateOutlet],
   encapsulation: ViewEncapsulation.ShadowDom,
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['../../tema.css', '../../base.css', '../../elements.css', './torneos-publico.css'],
   template: `
     <header class="tapete">
       <div class="ancho">
-        <p class="marca">Juegos de Cadabra</p>
+        <app-logo />
         <h1>{{ actual() ? actual()!.nombre : 'Torneos' }}</h1>
       </div>
     </header>

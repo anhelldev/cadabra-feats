@@ -10,7 +10,7 @@ import { Solicitudes } from '../core/solicitudes';
     <header class="cabecera">
       <div class="ancho fila">
         <div>
-          <p class="marca">Juegos de Cadabra</p>
+          <p class="marca">Admin panel para app</p>
           <h1>{{ titulo() }}</h1>
         </div>
         <nav>

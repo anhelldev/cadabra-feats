@@ -9,7 +9,7 @@ import { NAVEGACION } from '../core/navegacion';
     <main>
       @if (olvide()) {
         <form (submit)="pedirEnlace($event)">
-          <p class="marca">Juegos de Cadabra</p>
+          <p class="marca">Admin panel para app</p>
           <h1>Recuperar contraseña</h1>
           @if (enviado()) {
             <p class="texto" role="status">
@@ -31,7 +31,7 @@ import { NAVEGACION } from '../core/navegacion';
         </form>
       } @else {
         <form (submit)="entrar($event)">
-          <p class="marca">Juegos de Cadabra</p>
+          <p class="marca">Admin panel para app</p>
           <h1>Panel de administración</h1>
           <label class="campo">
             Correo

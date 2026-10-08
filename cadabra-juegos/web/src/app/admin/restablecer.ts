@@ -12,7 +12,7 @@ type Estado = 'comprobando' | 'listo' | 'invalido' | 'hecho';
   template: `
     <main>
       <div class="tarjeta">
-        <p class="marca">Juegos de Cadabra</p>
+        <p class="marca">Admin panel para app</p>
         <h1>Nueva contraseña</h1>
 
         @switch (estado()) {
