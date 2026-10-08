@@ -225,3 +225,31 @@ página de WordPress, bloque "HTML personalizado":
 - El panel `/admin` sigue en Vercel (próxima fase: `<cadabra-admin>`).
 - Estilos compartidos: `web/src/tema.css` (colores) y `web/src/base.css` (reset y clases comunes) los usan la app y el element;
   `web/src/elements.css` es la base del host dentro del shadow root.
+
+## Torneos
+
+Pestaña **Torneos** del panel (`/admin/torneos`) y página pública `/torneos` (también como `<cadabra-torneos>` para WordPress, en el
+mismo `main.js` que el catálogo).
+
+- **Crear:** nombre, juego (opcional, del catálogo), formato, fecha, lugar, cupos y descripción. Formatos:
+  - *Por puntuación:* N rondas; cada ronda se sortean mesas (tamaño configurable, parejas y nunca una mesa de 1); se anotan los
+    puntos de cada jugador y se acumulan en una tabla de posiciones (los empates comparten lugar).
+  - *Eliminación directa 1 vs 1:* llave con sorteo; si no son potencia de 2, los que sobran pasan directo (bye). Se marca quién gana
+    cada cruce; el podio es campeón, finalista y los dos semifinalistas (tercer lugar compartido).
+- **Flujo (estados):** Borrador → Inscripciones abiertas → (cerrar y sortear, con vista previa y "volver a sortear") → En curso →
+  Finalizado. También se puede Cancelar o Eliminar. Los inscritos pasan a lista de espera cuando se llenan los cupos.
+- **Inscripción por link:** `…/torneos?t=<slug>` (botón "Copiar" en la gestión del torneo). Formulario como el de solicitudes
+  (teléfono con prefijo, consentimiento, campo trampa). `torneos.urlPublica` en `web/src/environments/*.ts` es la página de WordPress
+  con `<cadabra-torneos>`; vacío = la ruta `/torneos` de la app. El QR queda para después, sobre el mismo link.
+- **Juego e imagen:** el torneo muestra el juego que se va a jugar (portada, jugadores, duración, dificultad) en la lista, en el
+  detalle y encima del formulario de inscripción. La **imagen promocional** es opcional (se elige en el editor, se achica sola a webp
+  de ≤ 480 KB y se guarda en el bucket `portadas`, carpeta `torneos/`); si no hay, se usa la portada del juego sobre su versión
+  desenfocada. Migración `20261010000000_torneos_imagen.sql` (columna `imagen` y política para leer el juego de un torneo publicado
+  aunque esté oculto del catálogo). Las imágenes que no cargan se ocultan en vez de mostrar el ícono roto.
+- **Privacidad:** teléfonos y correos solo los ve el admin (RLS). El público ve solo nombres, a través de las vistas
+  `torneo_participantes` y `torneo_partidas_publicas`.
+- **Base de datos:** migración `20261009000000_torneos.sql` (tablas `torneos`, `inscripciones`, `partidas`, `partida_jugadores`, las
+  dos vistas y las funciones `crear_partidas` / `iniciar_torneo`, solo para admins).
+- **Lógica y pruebas:** el sorteo, las mesas, la llave y las tablas están en `web/src/app/core/torneos-logica.ts`
+  (`node --experimental-strip-types --no-warnings web/src/app/core/torneos-logica.test.mjs`). `scripts/probar-torneos.mjs` prueba
+  contra la base local las reglas de seguridad y el torneo completo.

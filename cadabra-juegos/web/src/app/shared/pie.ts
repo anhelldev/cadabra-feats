@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
+import { URL_BASE } from '../core/recursos';
 
 @Component({
   selector: 'app-pie',
@@ -11,7 +12,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
       </p>
       @if (bgg()) {
         <a class="bgg" href="https://boardgamegeek.com" target="_blank" rel="noopener" aria-label="Powered by BoardGameGeek">
-          <img src="img/powered-by-bgg.png" alt="Powered by BGG" width="109" height="32" />
+          <img [src]="logoBgg" alt="Powered by BGG" width="109" height="32" />
         </a>
       }
     </footer>
@@ -54,4 +55,5 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 export class Pie {
   /** Muestra el logo "Powered by BGG": solo donde se usan datos de BoardGameGeek. */
   readonly bgg = input(true);
+  protected readonly logoBgg = `${inject(URL_BASE)}img/powered-by-bgg.png`;
 }

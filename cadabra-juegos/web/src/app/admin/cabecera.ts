@@ -26,6 +26,7 @@ import { Solicitudes } from '../core/solicitudes';
           Solicitudes
           @if (solicitudes.totalPendientes(); as n) { <span class="cuenta">{{ n }}</span> }
         </a>
+        <a routerLink="/admin/torneos" routerLinkActive="activa">Torneos</a>
       </nav>
     </header>
   `,

@@ -7,4 +7,6 @@ export const environment = {
   // Solicitudes para jugar: prefijo de país que se antepone a los teléfonos escritos sin "+" (ej. '+58'; vacío = el
   // visitante debe escribir el código de país) y enlace opcional a la política de privacidad.
   solicitudes: { prefijo: '+58', privacidadUrl: '' },
+  // Torneos: URL de la página donde vive <cadabra-torneos> (el link de inscripción le agrega ?t=<slug>). Vacío = la ruta /torneos de la app.
+  torneos: { urlPublica: '' },
 };

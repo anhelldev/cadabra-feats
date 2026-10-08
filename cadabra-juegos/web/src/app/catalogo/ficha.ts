@@ -64,11 +64,11 @@ import { Dado } from '../shared/dado';
           }
           <div class="acciones">
             <button class="boton" type="button" (click)="dialogo.close()">Cerrar</button>
-            @if (!juego().en_local) {
+            @if (!juego().en_local && solicitable()) {
               <button class="boton solicitar" type="button" (click)="solicitando.set(true)">Solicitar para jugar</button>
             }
           </div>
-          @if (!juego().en_local) {
+          @if (!juego().en_local && solicitable()) {
             <p class="nolocal">
               @if (juego().para_llevar) {
                 Este juego no está en el local, pero lo puedes solicitar. Pídelo y te avisamos para coordinar el día.
@@ -121,6 +121,8 @@ import { Dado } from '../shared/dado';
 export class Ficha {
   readonly juego = input.required<JuegoPublico>();
   readonly color = input('#715091');
+  /** Falso cuando la ficha se abre desde otra pantalla (por ejemplo, un torneo): no ofrece pedir el juego. */
+  readonly solicitable = input(true);
   readonly cerrar = output();
 
   private readonly dialogo = viewChild.required<ElementRef<HTMLDialogElement>>('dialogo');
