@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+button,
+select,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid var(--ficha);
+  outline-offset: 2px;
+}
+.ancho {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.campo {
+  display: grid;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--tenue);
+}
+.campo input,
+.campo select,
+.campo textarea {
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--linea);
+  border-radius: 10px;
+  background: var(--carta);
+  color: var(--tinta);
+  min-width: 0;
+  width: 100%;
+}
+.campo textarea {
+  padding: 10px 12px;
+  resize: vertical;
+}
+.boton {
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 10px;
+  border: 0;
+  background: var(--accion);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.boton.secundario {
+  background: transparent;
+  color: var(--tinta);
+  border: 1px solid var(--linea);
+}
+.boton.peligro {
+  background: transparent;
+  color: var(--aviso);
+  border: 1px solid currentColor;
+}
+.boton[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+.enlace {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--tinta);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.error {
+  color: var(--aviso);
+  margin: 0;
+}

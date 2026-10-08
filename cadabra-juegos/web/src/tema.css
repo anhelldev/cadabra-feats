@@ -1,0 +1,56 @@
+:root,
+:host {
+  --mesa: #faf0e1;
+  --carta: #ffffff;
+  --tinta: #24272a;
+  --tenue: #6e5f78;
+  --linea: #e3d3e6;
+  --tapete: #715091;
+  --tapete-tinta: #faf0e1;
+  --accion: #715091;
+  --tapete-tenue: #c19ade;
+  --tapete-linea: #8e6fae;
+  --ficha: #ff8300;
+  --ficha-tinta: #24272a;
+  --aviso: #c2410c;
+  --ok: #15803d;
+  --dado: #ffffff;
+  --pip: #24272a;
+  --display: 'Bricolage Grotesque', 'Trebuchet MS', system-ui, sans-serif;
+  --texto: 'General Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']),
+  :host([tema='auto']) {
+    --mesa: #1a1520;
+    --carta: #251e2d;
+    --tinta: #f3eaf7;
+    --tenue: #b8a8c4;
+    --linea: #3b3046;
+    --tapete: #3e2a52;
+    --tapete-linea: #5e4479;
+    --accion: #8f6bb5;
+    --aviso: #fdba74;
+    --ok: #86efac;
+    --dado: #f3eaf7;
+    --pip: #1a1520;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'],
+:host([tema='oscuro']) {
+  --mesa: #1a1520;
+  --carta: #251e2d;
+  --tinta: #f3eaf7;
+  --tenue: #b8a8c4;
+  --linea: #3b3046;
+  --tapete: #3e2a52;
+  --tapete-linea: #5e4479;
+  --accion: #8f6bb5;
+  --aviso: #fdba74;
+  --ok: #86efac;
+  --dado: #f3eaf7;
+  --pip: #1a1520;
+  color-scheme: dark;
+}

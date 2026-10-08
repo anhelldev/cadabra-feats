@@ -1,9 +1,9 @@
-// Aplica la lista de juegos "para llevar": los de la lista pasan a visibles + para_llevar (sin estar en el local) y se
+// Aplica la lista de juegos "para solicitar": los de la lista pasan a visibles + para_llevar (sin estar en el local) y se
 // ocultan los demás juegos visibles que no están en el local. Los que ya están en el local no se tocan.
 //
 // Entra con tu usuario admin (mismas reglas de seguridad que el panel). Sin --aplicar solo muestra el plan.
 // Uso (desde scripts/): ./para-llevar-nube.sh [--aplicar | --revertir]
-//   --revertir  vuelve a mostrar los juegos que este script ocultó y quita "para llevar" a los que marcó
+//   --revertir  vuelve a mostrar los juegos que este script ocultó y quita "para solicitar" a los que marcó
 //               (según scripts/para-llevar-respaldo.json)
 import { readFile, writeFile } from "node:fs/promises";
 import { createClient } from "@supabase/supabase-js";
@@ -112,7 +112,7 @@ const completo = (j) => ["jugadores_min", "jugadores_max", "duracion_min", "difi
 
 if (REVERTIR) {
   const r = JSON.parse(await readFile(RESPALDO, "utf8"));
-  console.log(`Revertir: mostrar ${r.ocultados.length} juegos y quitar "para llevar" a ${r.marcados.length}.`);
+  console.log(`Revertir: mostrar ${r.ocultados.length} juegos y quitar "para solicitar" a ${r.marcados.length}.`);
   if (!APLICAR) {
     console.log("(Simulación: agrega --aplicar para hacerlo.)");
     process.exit(0);
@@ -139,7 +139,7 @@ const incompletos = [...marcar.values()].filter((j) => !completo(j));
 const ocultar = juegos.filter((j) => j.visible && !j.en_local && !marcar.has(j.id));
 
 console.log(`\nDe tu lista (${Object.keys(LISTA).length} entradas):`);
-console.log(`  - ${marcar.size} juegos pasan a "para llevar" y visibles`);
+console.log(`  - ${marcar.size} juegos pasan a "para solicitar" y visibles`);
 console.log(`  - ${yaEnLocal.length} ya están en el local (no se tocan): ${yaEnLocal.map((j) => j.nombre).join(", ") || "ninguno"}`);
 console.log(`  - ${incompletos.length} están incompletos y NO se pueden hacer visibles hasta completarlos: ${incompletos.map((j) => `${j.nombre} (id ${j.id})`).join(", ") || "ninguno"}`);
 console.log(`  - ${noEncontrados.length} no están en la base: ${noEncontrados.join(", ") || "ninguno"}`);

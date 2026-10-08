@@ -197,12 +197,31 @@ Cualquiera puede enviar una solicitud, pero **solo los admins pueden leerlas** (
 - `solicitudes.prefijo` en `web/src/environments/*.ts` (ej. `'+58'`) permite que el visitante escriba el número sin código de país;
   `solicitudes.privacidadUrl` agrega un enlace a tu política de privacidad junto al consentimiento.
 
-## Para llevar
+## Para solicitar
 
-Un juego puede estar **en el local** (ya está ahí) o **para llevar** (no está, pero se puede llevar si alguien lo pide). Son excluyentes
-(la base lo impide). En el panel se marca desde el editor ("Para llevar"), se filtra en "En el local → Para llevar" y tiene su contador;
-en el catálogo sale como etiqueta y en el filtro "Mostrar → Para llevar". Los juegos para llevar también se pueden solicitar.
+Un juego puede estar **en el local** (ya está ahí) o **para solicitar** (no está, pero se puede pedir y se lleva al local si alguien lo solicita). Son excluyentes
+(la base lo impide). En el panel se marca desde el editor ("Para solicitar"), se filtra en "En el local → Para solicitar" y tiene su contador;
+en el catálogo sale como etiqueta y en el filtro "Mostrar → Para solicitar". Los juegos para solicitar también se pueden solicitar.
 
 `scripts/para-llevar-nube.sh` aplica de una vez la lista de Cadabra (nombres en `scripts/para-llevar.mjs`): marca esos juegos como
-para llevar y visibles, y oculta los demás visibles que no están en el local. Sin `--aplicar` solo muestra el plan; `--revertir
+para solicitar y visibles, y oculta los demás visibles que no están en el local. Sin `--aplicar` solo muestra el plan; `--revertir
 --aplicar` lo deshace (usa `scripts/para-llevar-respaldo.json`). Los juegos incompletos no se pueden hacer visibles hasta completarlos.
+
+## Incrustar el catálogo en WordPress (Angular Element)
+
+El catálogo también se publica como un custom element, `<cadabra-catalogo>`, que vive dentro de la página (sin iframe). En una
+página de WordPress, bloque "HTML personalizado":
+
+    <script type="module" src="https://cadabra-juegos.vercel.app/elements/publico/main.js"></script>
+    <cadabra-catalogo></cadabra-catalogo>
+
+- Atributo `tema`: `claro` (por defecto en WordPress), `oscuro` o `auto` (sigue al sistema). Ej.: `<cadabra-catalogo tema="oscuro">`.
+- Usa Shadow DOM: el CSS del tema de WordPress no lo afecta ni él afecta al tema. Las fuentes se cargan en el documento.
+- El diseño responde al ancho de la ventana (media queries). No se usan container queries: dentro de Elementor (contenedores flex) hacían que el widget midiera de más y dejara un gran espacio en blanco debajo.
+- `npm run build` genera la app (`dist/web/browser`) y el element (`dist/web/browser/elements/publico/main.js`); `web/vercel.json`
+  agrega CORS (`*`, es código público) y caché de 5 minutos a `/elements/*`, así cada deploy actualiza WordPress solo.
+- Página de prueba con CSS "hostil" de tema: `/elements-demo.html` (en local, sirve `dist/web/browser` con `npx serve`).
+- Con plugins de caché/optimización (WP Rocket, Autoptimize…) excluye ese script de la combinación y del retraso de JS.
+- El panel `/admin` sigue en Vercel (próxima fase: `<cadabra-admin>`).
+- Estilos compartidos: `web/src/tema.css` (colores) y `web/src/base.css` (reset y clases comunes) los usan la app y el element;
+  `web/src/elements.css` es la base del host dentro del shadow root.

@@ -105,7 +105,7 @@
           <select [value]="disp()" (change)="disp.set($any($event.target).value)">
             <option value="">Todos</option>
             <option value="local">Los que hay en el local</option>
-            <option value="llevar">Para llevar</option>
+            <option value="llevar">Para solicitar</option>
           </select>
         </label>
         <button class="enlace" type="button" (click)="limpiar()">Quitar filtros</button>
@@ -137,7 +137,7 @@
                 @if (j.en_local) {
                   <span class="local">En el local</span>
                 } @else if (j.para_llevar) {
-                  <span class="local llevar">Para llevar</span>
+                  <span class="local llevar">Para solicitar</span>
                 }
               </span>
             </span>

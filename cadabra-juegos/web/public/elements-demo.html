@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Demo del element de Cadabra (tema WordPress simulado)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <style>
+    /* CSS "hostil" tipo tema de WordPress: si algo de esto se filtra al catálogo, el aislamiento falló. */
+    * { box-sizing: content-box; }
+    body { font-family: Georgia, serif; font-size: 22px; line-height: 2; color: #222; background: #eef; letter-spacing: .04em; text-transform: uppercase; }
+    h1, h2, h3, p { margin: 2em 0; color: crimson; }
+    button, input, select { border: 3px dashed red !important; background: yellow !important; border-radius: 0 !important; font-size: 30px !important; }
+    a { color: green; text-decoration: none; }
+    ul { list-style: square; padding-left: 80px; }
+    .contenido { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    .columna { max-width: 640px; margin: 2em auto; outline: 2px dotted #999; }
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>Página de WordPress simulada</h1>
+    <p>Abajo, el element a todo el ancho.</p>
+    <cadabra-catalogo></cadabra-catalogo>
+    <p>Y aquí, dentro de una columna angosta (container queries):</p>
+    <div class="columna"><cadabra-catalogo></cadabra-catalogo></div>
+  </div>
+  <script type="module" src="/elements/publico/main.js"></script>
+</body>
+</html>

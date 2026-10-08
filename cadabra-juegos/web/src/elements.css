@@ -1,0 +1,11 @@
+/* Base del catálogo cuando vive dentro de un shadow root (como <cadabra-catalogo> en WordPress). */
+:host {
+  all: initial;
+  display: block;
+  background: var(--mesa);
+  color: var(--tinta);
+  font-family: var(--texto);
+  font-size: 16px;
+  line-height: 1.45;
+  text-align: left;
+}

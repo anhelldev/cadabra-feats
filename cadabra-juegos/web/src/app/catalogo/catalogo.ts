@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component, computed, effect, ElementRef, inject, signal, untracked, viewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation, computed, effect, ElementRef, inject, signal, untracked, viewChild } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { Juegos, JuegoPublico, miniaturaDe, NIVELES, normalizar, textoDuracion } from '../core/juegos';
+import { TEMA_POR_DEFECTO } from '../core/tema';
 import { Dado } from '../shared/dado';
 import { Pie } from '../shared/pie';
 import { Ficha } from './ficha';
@@ -21,8 +22,9 @@ const ORDEN: Record<Orden, (a: JuegoPublico, b: JuegoPublico) => number> = {
   selector: 'app-catalogo',
   imports: [Dado, Ficha, Pie, Ruleta],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.ShadowDom,
   templateUrl: './catalogo.html',
-  styleUrl: './catalogo.css',
+  styleUrls: ['../../tema.css', '../../base.css', '../../elements.css', './catalogo.css'],
 })
 export class Catalogo {
   private readonly api = inject(Juegos);
@@ -80,6 +82,9 @@ export class Catalogo {
   private readonly centinela = viewChild<ElementRef<HTMLElement>>('centinela');
 
   constructor() {
+    const host: HTMLElement = inject(ElementRef).nativeElement;
+    if (!host.hasAttribute('tema')) host.setAttribute('tema', inject(TEMA_POR_DEFECTO));
+
     // Al cambiar filtros u orden la lista vuelve a empezar desde arriba.
     effect(() => {
       this.resultados();

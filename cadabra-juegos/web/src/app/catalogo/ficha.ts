@@ -23,7 +23,8 @@ import { Dado } from '../shared/dado';
       <div class="ficha">
         <div class="caja" [style.--c]="color()">
           @if (juego().portada && !sinImagen()) {
-            <img [src]="juego().portada" [alt]="'Portada de ' + juego().nombre" (error)="sinImagen.set(true)" />
+            <img class="fondo" [src]="juego().portada" alt="" aria-hidden="true" />
+            <img class="portada" [src]="juego().portada" [alt]="'Portada de ' + juego().nombre" (error)="sinImagen.set(true)" />
           } @else {
             <span class="tipo">{{ juego().categoria }}</span>
             <span class="titulo">{{ juego().nombre }}</span>
@@ -70,7 +71,7 @@ import { Dado } from '../shared/dado';
           @if (!juego().en_local) {
             <p class="nolocal">
               @if (juego().para_llevar) {
-                Este juego no está en el local, pero podemos llevarlo. Pídelo y te avisamos para coordinar el día.
+                Este juego no está en el local, pero lo puedes solicitar. Pídelo y te avisamos para coordinar el día.
               } @else {
                 Este juego todavía no está en el local. Puedes pedirlo y te avisamos cuando esté disponible.
               }
@@ -86,18 +87,21 @@ import { Dado } from '../shared/dado';
   `,
   styles: `
     dialog { border: 0; padding: 0; border-radius: 18px; background: var(--carta); color: var(--tinta);
-      width: min(720px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow: auto; }
+      width: min(720px, calc(100vw - 40px)); max-height: calc(100dvh - 40px); overflow: auto; }
     dialog::backdrop { background: rgba(36, 20, 48, 0.6); }
     .ficha { display: grid; grid-template-columns: 240px minmax(0, 1fr); }
     .caja { position: relative; min-height: 300px; padding: 18px; display: flex; flex-direction: column;
       justify-content: space-between; color: #fff; background: var(--c); overflow: hidden;
       --dado-cara: #fff; --dado-borde: transparent; --dado-pip: var(--c); }
-    .caja img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #fff; }
+    .caja img { position: absolute; inset: 0; width: 100%; height: 100%; }
+    /* La misma portada, desenfocada, rellena el panel: así no quedan franjas blancas arriba y abajo. */
+    .caja .fondo { object-fit: cover; filter: blur(22px) brightness(0.8) saturate(1.2); transform: scale(1.3); }
+    .caja .portada { object-fit: contain; padding: 22px; filter: drop-shadow(0 8px 18px rgb(0 0 0 / 0.4)); }
     .tipo { font-size: 0.85rem; opacity: 0.85; }
     .titulo { font-family: var(--display); font-weight: 800; font-size: 1.9rem; line-height: 1;
       letter-spacing: -0.01em; overflow-wrap: anywhere; }
     app-dado { align-self: flex-end; }
-    .cuerpo { padding: 22px 22px 20px; display: grid; gap: 14px; align-content: start; }
+    .cuerpo { padding: 26px 30px 24px; display: grid; gap: 14px; align-content: start; background: var(--mesa); }
     h2 { font-family: var(--display); font-weight: 800; font-size: 1.6rem; line-height: 1.1; margin: 0; }
     h3 { font-family: var(--display); font-size: 1.05rem; margin: 0 0 6px; }
     .meta { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
@@ -135,7 +139,7 @@ export class Ficha {
       `Dificultad: ${NIVELES[j.dificultad].toLowerCase()}`,
       `Desde ${j.edad_min} años`,
       j.categoria,
-      ...(j.en_local ? ['En el local'] : j.para_llevar ? ['Para llevar'] : []),
+      ...(j.en_local ? ['En el local'] : j.para_llevar ? ['Para solicitar'] : []),
     ];
   });
 
