@@ -104,6 +104,10 @@
     <button class="boton secundario" type="button" [disabled]="!cuentas().porDecidir" (click)="revisandoBgg.set(true)">
       Revisar BGG ({{ cuentas().porDecidir }})
     </button>
+    <button class="boton secundario" type="button" [disabled]="!filtrados().length" (click)="exportar()" title="Descarga en Excel los juegos que ves con los filtros actuales">
+      Exportar ({{ filtrados().length }})
+    </button>
+    <button class="boton secundario" type="button" (click)="importando.set(true)" title="Sube un Excel editado para actualizar o crear juegos">Importar</button>
     <button class="boton" type="button" (click)="buscarBgg.set('agregar')">Agregar juego</button>
   </section>
 
@@ -219,6 +223,10 @@
 
 @if (aviso(); as a) {
   <p class="toast" [class.mal]="a.error" role="status">{{ a.texto }}</p>
+}
+
+@if (importando()) {
+  <app-edicion-masiva [juegos]="juegos()" [categorias]="categorias()" (aplicado)="cargar()" (cerrar)="importando.set(false)" />
 }
 
 @if (revisandoBgg()) {

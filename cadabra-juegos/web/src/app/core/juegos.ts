@@ -1,5 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { Supabase } from './supabase';
+import { faltantes } from './util-juegos';
 
 export interface Video {
   id: number;
@@ -97,20 +98,7 @@ export const urlBgg = (j: Pick<Juego, 'bgg_id' | 'bgg_tipo'>) =>
 
 export const NIVELES = ['', 'Muy fácil', 'Fácil', 'Media', 'Difícil', 'Experto'] as const;
 
-const OBLIGATORIOS = {
-  jugadores_min: 'jugadores mín.',
-  jugadores_max: 'jugadores máx.',
-  duracion_min: 'duración',
-  dificultad: 'dificultad',
-  edad_min: 'edad',
-  categoria: 'categoría',
-} as const;
-
-export function faltantes(j: Partial<Record<keyof typeof OBLIGATORIOS, unknown>>): string[] {
-  return (Object.keys(OBLIGATORIOS) as (keyof typeof OBLIGATORIOS)[])
-    .filter((k) => j[k] == null || j[k] === '')
-    .map((k) => OBLIGATORIOS[k]);
-}
+export { faltantes } from './util-juegos';
 
 const TANDA = 1000;
 
@@ -156,6 +144,18 @@ export class Juegos {
     const { data, error } = await this.db.from('juegos').insert(juego).select().single();
     if (error) throw error;
     return data;
+  }
+
+  /** Crea varios juegos de una vez (por tandas); devuelve cuántos se crearon. Una tanda con un problema falla completa. */
+  async crearVarios(filas: Record<string, unknown>[]): Promise<number> {
+    let creados = 0;
+    for (let i = 0; i < filas.length; i += 100) {
+      const tanda = filas.slice(i, i + 100);
+      const { error } = await this.db.from('juegos').insert(tanda);
+      if (error) throw error;
+      creados += tanda.length;
+    }
+    return creados;
   }
 
   /**
@@ -235,21 +235,6 @@ export function textoDuracion(min: number | null, max: number | null): string {
   return max != null && max > min ? `${min}–${max} min` : `${min} min`;
 }
 
-export function aSlug(s: string): string {
-  return s
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
-}
-
-export function normalizar(s: string): string {
-  return s
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase();
-}
 
 export function mensajeError(e: unknown): string {
   const m = (e as { message?: string })?.message ?? String(e);
@@ -258,3 +243,4 @@ export function mensajeError(e: unknown): string {
   if (m.includes('juegos_bgg_id_key')) return 'Ese juego de BGG ya está en el catálogo.';
   return m;
 }
+export { aSlug, normalizar } from './util-juegos';

@@ -5,7 +5,10 @@ import { descartados, detectarDuplicados } from '../core/duplicados';
 import { aSlug, Categoria, faltantes, Juego, Juegos, mensajeError, miniaturaDe, NIVELES, normalizar, textoDuracion } from '../core/juegos';
 import { Pie } from '../shared/pie';
 import { BuscarBgg } from './buscar-bgg';
+import { aFilas } from '../core/masivo';
+import { descargarHoja } from '../core/masivo-excel';
 import { Duplicados, Fusion } from './duplicados';
+import { EdicionMasiva } from './edicion-masiva';
 import { Editor } from './editor';
 import { RevisarBgg } from './revisar-bgg';
 import { CabeceraAdmin } from './cabecera';
@@ -18,7 +21,7 @@ const POR_PAGINA = 100;
 
 @Component({
   selector: 'app-panel',
-  imports: [CabeceraAdmin, Editor, BuscarBgg, SyncBgg, Duplicados, Pie, RevisarBgg],
+  imports: [CabeceraAdmin, Editor, BuscarBgg, SyncBgg, Duplicados, Pie, RevisarBgg, EdicionMasiva],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './panel.html',
   styleUrl: './panel.css',
@@ -42,6 +45,7 @@ export class Panel {
   protected readonly mostrarSync = signal(false);
   protected readonly verDuplicados = signal(false);
   protected readonly revisandoBgg = signal(false);
+  protected readonly importando = signal(false);
   private readonly sync = viewChild(SyncBgg);
 
   protected readonly q = signal('');
@@ -110,6 +114,17 @@ export class Panel {
       this.avisar(mensajeError(e), true);
     } finally {
       this.cargando.set(false);
+    }
+  }
+
+  /** Descarga en Excel los juegos que se ven con los filtros actuales. */
+  protected async exportar() {
+    const juegos = this.filtrados();
+    try {
+      await descargarHoja(aFilas(juegos), `juegos-cadabra-${new Date().toISOString().slice(0, 10)}.xlsx`);
+      this.avisar(`${juegos.length} ${juegos.length === 1 ? 'juego exportado' : 'juegos exportados'} a Excel`);
+    } catch (e) {
+      this.avisar(`No pude crear el archivo: ${(e as Error).message}`, true);
     }
   }
 

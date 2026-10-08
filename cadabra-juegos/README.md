@@ -272,3 +272,24 @@ Para usar el panel dentro de una página **privada** de WordPress (con contrase�
 - La sesión queda en el almacenamiento del navegador de `juegoscadabra.com`.
 - Página de prueba con CSS de tema hostil: `/elements-admin-demo.html`. Para probar contra la base **local**:
   `ng build --configuration elements-admin-local` (y `elements-publico-local`), que salen en `web/dist/local/`.
+
+## Edición masiva en Excel
+
+En **Juegos** del panel: **Exportar (N)** descarga un `.xlsx` con los juegos que ves (con los filtros actuales) e **Importar** sube
+el archivo editado.
+
+- **Columnas:** ID, nombre, categoría, jugadores mín/máx, duración mín/máx, dificultad, edad mín, descripción, consejos (uno por
+  línea), portada (URL), Visible, En el local, Para solicitar y Revisar. Las marcadas «no editar» (slug, origen, BGG id,
+  actualizado) se ignoran al importar. Una columna que borres del archivo no se toca.
+- **Unión por ID.** Una fila sin ID crea un juego nuevo (oculto salvo que esté completo); no se borra ningún juego.
+- **Celdas vacías:** en texto y números **borran** el dato; en Sí/No no cambian nada.
+- **Vista previa antes de guardar:** cuántos se actualizan/crean, errores por fila (categoría que no existe, dificultad fuera de
+  1-5, mínimos mayores que máximos, «En el local» y «Para solicitar» a la vez, hacer visible un juego incompleto…) y el antes/después
+  de cada campo. Las filas con errores no se aplican.
+- **Cambios mientras editabas:** el archivo lleva la fecha de última modificación de cada juego; si el juego cambió después, la fila
+  se aparta salvo que marques «aplicar también».
+- **Respaldo:** antes de guardar se descarga `respaldo-antes-de-importar-….xlsx` con los valores anteriores; importándolo de vuelta
+  se deshace el cambio.
+- **Código:** lógica pura en `web/src/app/core/masivo.ts` con pruebas (`node --experimental-strip-types --no-warnings
+  web/src/app/core/masivo.test.mjs`); lectura/escritura de Excel en `masivo-excel.ts` (`read-excel-file` y `write-excel-file`, que se
+  cargan solo al exportar o importar); ventana en `admin/edicion-masiva.ts`.
